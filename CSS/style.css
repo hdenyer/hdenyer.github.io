@@ -1,0 +1,189 @@
+@media (max-width: 768px) {
+  .gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    width: 100%;
+  }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#banner {
+   width: 100%;
+   height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0, -5px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+  
+
+#banner-script {
+	width: 1000px; 
+	height: 250px; 
+	overflow: hidden;
+	margin: auto;
+	padding-bottom: 30px;
+  	justify-content: center;
+	display: flex;
+}
+
+#frame-top {
+    display: flex;
+	border: solid transparent;
+	height: 400px;
+	width: 1250px;
+	padding: 0px;
+	border-image: url("IMG/BannerFrame.png");
+}
+
+.welcome {
+	width: 1250px;
+	height: auto;
+	display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0, -5px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+  
+
+.gallery-row {
+   display: flex;
+   justify-content: space-between;
+   margin: 0, -5px;
+}
+
+.gallery-item {
+   margin-top: 30px;
+   width: 100%;
+   height: auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.gallery-img {
+   width: 400px;
+   height: auto;
+   transition: filter 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+   filter: brightness(70%);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.gallery-frame {
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-img {
+   position: absolute;
+	
+	height: 400px;
+	width: 1250px;
+}
+#gallery-frame1 {
+	position: absolute;
+	
+	height: 400px;
+	width: 400px;
+}
+
+#gallery-frame2 {
+	position: absolute;
+	
+	height: 400px;
+	width: 400px;
+}
+
+#gallery-frame3 {
+	position: absolute;
+	
+	height: 400px;
+	width: 400px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0, -5px;
+  margin-top: 30px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+#about-img {
+  width: 625px;
+  height: 400px;
+  transition: filter 0.3s ease;
+}
+
+#about:hover #about-img {
+  filter: brightness(70%);
+}
+
+#about-frame {
+  position: absolute;
+  height: 400px;
+  width: 625px;
+}
+
+#about:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
