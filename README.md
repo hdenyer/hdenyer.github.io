@@ -2,4 +2,4 @@
 
 My personal portfolio website.
 
-Visit [holdendenyer.com](holdendenyer.com/) to check it out!
+Visit [holdendenyer.com](https://www.holdendenyer.com/) to check it out!
