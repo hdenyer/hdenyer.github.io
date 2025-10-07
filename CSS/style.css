@@ -1,189 +1,181 @@
-@media (max-width: 768px) {
-  .gallery-item {
-    width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-item {
-    width: 100%;
-  }
-}
-
-html {
-  height: 100%;
-  width: 100%;
-}
-
-canvas {
-  display: block;
+/* Reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  font-family: Arial, sans-serif;
+  background: #6C0F0F;
+  background-image: url('../IMG/background-red.png');
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.container {
+/* Banner container */
+#banner {
+  position: relative;
+  width: 100%;
   max-width: 1250px;
-  margin: 50px auto;
+  margin: 20px auto;
+  text-align: center;
+  z-index: 1; /* ensures banner sits above body background but below other sections */
+}
+
+/* Wrapper keeps both images aligned and scaled */
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Frame always fills container width */
+.banner-frame {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* GIF sits *inside* the frame */
+.banner-gif {
+  position: absolute;
+  top: 25%;        /* roughly centers vertically (100px offset within 400px frame) */
+  left: 10%;       /* roughly centers horizontally (125px offset within 1250px frame) */
+  width: 80%;      /* 1000px of 1250px total width */
+  height: auto;
+  z-index: 1;      /* places GIF *under* the frame */
+}
+
+/* Ensures other sections start below banner */
+.welcome-section,
+.gallery-wall,
+#about {
+  position: relative;
+  z-index: 0;
+  margin-top: 40px;
+}
+
+
+.container {
+  max-width: 1600px;   /* wider max width than before */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Every image scales with the window */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Banner centered and allowed to grow larger */
+#banner {
+  width:100%;           /* fill most of the page width */
+  max-width: 1200px;    /* larger than before */
+  margin: 20px auto;
   text-align: center;
 }
 
-#banner {
-   width: 100%;
-   height: auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 0, -5px;
-  margin-top: 30px;
-  position: relative;
-  overflow: hidden;
+/* Welcome image */
+.welcome-section {
+  width: 90%;
+  max-width: 1200px;     /* slight bump up */
+  margin: 20px auto;
 }
 
-  
-
-#banner-script {
-	width: 1000px; 
-	height: 250px; 
-	overflow: hidden;
-	margin: auto;
-	padding-bottom: 30px;
-  	justify-content: center;
-	display: flex;
-}
-
-#frame-top {
-    display: flex;
-	border: solid transparent;
-	height: 400px;
-	width: 1250px;
-	padding: 0px;
-	border-image: url("IMG/BannerFrame.png");
-}
-
-.welcome {
-	width: 1250px;
-	height: auto;
-	display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 0, -5px;
-  margin-top: 30px;
-  position: relative;
-  overflow: hidden;
-}
-  
-
-.gallery-row {
-   display: flex;
-   justify-content: space-between;
-   margin: 0, -5px;
-}
-
-.gallery-item {
-   margin-top: 30px;
-   width: 100%;
-   height: auto;
-   position: relative;
-   overflow: hidden;
-}
-
-.gallery-img {
-   width: 400px;
-   height: auto;
-   transition: filter 0.3s ease;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .gallery-img {
-   filter: brightness(70%);
-}
-
-.gallery-item:hover .overlay {
-    opacity: 1;
-    visibility: visible;
-}
-
-.overlay-text {
-    color: #fff;
-    font-size: 32px;
-    cursor: pointer;
-}
-
-.gallery-frame {
-    position: relative;
-    overflow: hidden;
-}
-
-.frame-img {
-   position: absolute;
-	
-	height: 400px;
-	width: 1250px;
-}
-#gallery-frame1 {
-	position: absolute;
-	
-	height: 400px;
-	width: 400px;
-}
-
-#gallery-frame2 {
-	position: absolute;
-	
-	height: 400px;
-	width: 400px;
-}
-
-#gallery-frame3 {
-	position: absolute;
-	
-	height: 400px;
-	width: 400px;
-}
-
+/* About frame – smaller than banner and centered */
 #about {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 0, -5px;
-  margin-top: 30px;
+  width: 60%;           /* smaller relative to banner */
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;   /* makes sure it’s centered */
+}
+
+/* Gallery layout */
+.gallery-wall {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* four equal columns */
+  gap: 20px;
+  max-width: 1250px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Default image scaling */
+.gallery-item img {
   width: 100%;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
-#about-img {
-  width: 625px;
-  height: 400px;
-  transition: filter 0.3s ease;
+/* Large frames span 2x2 slots */
+.gallery-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
-#about:hover #about-img {
-  filter: brightness(70%);
+/* Small frames take 1x1 slot by default */
+.gallery-item.small {
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
-#about-frame {
-  position: absolute;
-  height: 400px;
-  width: 625px;
+/* This forces one small frame to stack directly above the other */
+.gallery-item.small.tall {
+  grid-row: span 2; /* takes up same vertical height as large frame */
 }
 
-#about:hover .overlay {
-  opacity: 1;
-  visibility: visible;
+/* "Wide" frames are short and stretch horizontally */
+.gallery-item.wide {
+  grid-column: span 2;
+  grid-row: span 1;   /* half the height of .large */
+}
+
+/* Optional variants for wider compositions */
+.gallery-item.wide-3 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.gallery-item.wide-4 {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+/* Mobile adjustment: full-width and shorter */
+@media (max-width: 900px) {
+  .gallery-item.wide,
+  .gallery-item.wide-3,
+  .gallery-item.wide-4 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+/* Responsive fallback for narrow screens */
+@media (max-width: 900px) {
+  .gallery-wall {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .gallery-item.small,
+  .gallery-item.small.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
 }

@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>HOLDENDENYER.com</title>
-	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
-    <script src="sketch.js"></script>
-    <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOLDENDENYER.com</title>
+  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
+  <div class="container">
 
-    <div class="container">
+    <!-- Banner -->
+    <header id="banner">
+      <div class="banner-wrapper">
+        <img src="IMG/sketch.gif" alt="Animated Banner" class="banner-gif">
+        <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+      </div>
+    </header>
 
-        <div id="banner">
-            
-			<div id="frame-top">
-            <img src="IMG/BannerFrame.png" alt="Frame Top" class="frame-img">
-				<iframe id="banner-script"  scrolling="no" frameborder="0" src="https://editor.p5js.org/hdenyer/full/o8fJQb6VM"></iframe>
-        </div>
-        </div>
-		<br>
-		
-		<img src="IMG/Welcome.png" alt="Welcome to HOLDENDENYER.com" class="welcome">
-        
-		<br>
-        <div class="gallery-row">
-          <div class="gallery-item">
-				<img src="IMG/Frame1.png" alt="frame" id="gallery-frame1">
-              <img src="portfolio/TDigital.png" alt="Artwork 1" class="gallery-img">
-                <div class="overlay">
-                    <div class="overlay-text" onclick="location.href='digital.html'">DIGITAL</div>
-				</div>
-            
-				</div>
-            <div class="gallery-item">
-				<img src="IMG/Frame2.png" alt="frame" id="gallery-frame2">
-                <img src="portfolio/TTest.png" alt="Artwork 2" class="gallery-img">
-                <div class="overlay">
-                    <div class="overlay-text" onclick="location.href='physical.html'">PHYSICAL</div>
-                </div>
-            </div>
-            <div class="gallery-item">
-				<img src="IMG/Frame3.png" alt="frame" id="gallery-frame3">
-                <img src="portfolio/TPhoto.png" alt="Artwork 3" class="gallery-img">
-                <div class="overlay">
-                    <div class="overlay-text" onclick="location.href='photography.html'">PHOTOGRAPHY</div>
-                </div>
-            </div>
-        </div>
-		<br>
-        <div id="about">
-			<img src="IMG/About_frame.png" alt="frame" id="about-frame">
-            <img src="IMG/aboutimage.png" alt="About" id="about-img">
-            <div class="overlay">
-                <div class="overlay-text" onclick="location.href='about.html'">ABOUT</div>
-            </div>
-        </div>
-		
+    <!-- Welcome -->
+    <section class="welcome-section">
+      <img src="IMG/Welcome2.png" alt="Welcome to HOLDENDENYER.com" class="responsive-img">
+    </section>
 
-    </div>
+    <!-- Gallery -->
+    <section class="gallery-wall">
+      <!-- Row 1 -->
+      <div class="gallery-item small tall">
+        <img src="IMG/TwoFrame.png" alt="Small Frame" class="responsive-img">
+      </div>
+      <div class="gallery-item small">
+        <img src="IMG/TallFrame.png" alt="Small Frame" class="responsive-img">
+      </div>
+      <div class="gallery-item large">
+        <img src="IMG/Frame3.png" alt="Large Frame" class="responsive-img">
+      </div>
 
+      <!-- Row 2 -->
+        <div class="gallery-item wide">
+          <img src="IMG/WideFrame3.png" alt="Wide Frame" class="responsive-img">
+        </div>
+        <div class="gallery-item small">
+          <img src="IMG/Frame2.png" alt="Small Frame" class="responsive-img">
+        </div>
+        <div class="gallery-item small">
+          <img src="IMG/Frame1.png" alt="Small Frame" class="responsive-img">
+        </div>
+
+      <!-- Row 3 -->
+      <div class="gallery-item large">
+        <img src="IMG/Frame1.png" alt="Large Frame" class="responsive-img">
+      </div>
+      <div class="gallery-item large">
+        <img src="IMG/ThreeFrame.png" alt="Small Frame" class="responsive-img">
+      </div>
+
+      <!-- Row 4 -->
+       <div class="gallery-item large">
+        <img src="IMG/Frame2.png" alt="Large Frame" class="responsive-img">
+      </div>
+      <div class="gallery-item small tall">
+        <img src="IMG/TallFrame3.png" alt="Small Frame" class="responsive-img">
+      </div>
+      <div class="gallery-item small tall">
+        <img src="IMG/TallFrame.png" alt="Small Frame" class="responsive-img">
+      </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+      <img src="IMG/About_frame.png" alt="About" class="responsive-img">
+    </section>
+
+  </div>
 </body>
 
 </html>
