@@ -179,3 +179,210 @@ body {
     grid-row: span 1;
   }
 }
+
+/* PROJECT PAGE */
+.project-header {
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: center;
+  color: #fff;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.project-subtitle {
+  opacity: 0.85;
+}
+
+/* Back button */
+.back-nav {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.back-button {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+.back-button:hover {
+  border-color: #fff;
+}
+
+/* Project content rows */
+.project-content {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.project-row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Image side */
+.project-image {
+  flex: 1;
+  cursor: pointer;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 4px solid #2a0000;
+}
+
+/* Text side */
+.project-text {
+  flex: 1;
+  color: #fff;
+}
+
+.project-text h2 {
+  margin-bottom: 10px;
+}
+
+/* Mobile stack */
+@media (max-width: 900px) {
+  .project-row {
+    flex-direction: column;
+  }
+}
+
+/* Carousel modal */
+.carousel-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.carousel-image {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.carousel-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+/* ===== SKILLS PAGE ===== */
+
+.skills-header {
+  text-align: center;
+  margin: 40px auto 20px;
+  max-width: 900px;
+}
+
+.skills-header h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+}
+
+.skills-header p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Navigation */
+.skills-nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto 30px;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 16px;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s;
+}
+
+.back-button:hover {
+  background: #fff;
+  color: #6C0F0F;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+/* Row Unit */
+.skills-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Image */
+.skills-image {
+  flex: 0 0 40%;
+}
+
+.skills-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 4px solid #000;
+}
+
+/* Text */
+.skills-text {
+  flex: 1;
+}
+
+.skills-text h2 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.skills-text p {
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .skills-row {
+    flex-direction: column;
+  }
+
+  .skills-image {
+    width: 100%;
+  }
+}
+
