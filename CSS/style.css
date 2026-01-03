@@ -28,6 +28,7 @@ body {
   /* ensures banner sits above body background but below other sections */
 }
 
+
 /* Wrapper keeps both images aligned and scaled */
 .banner-wrapper {
   position: relative;
@@ -214,6 +215,14 @@ body {
   opacity: 0.85;
 }
 
+.project-overview {
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: left;
+  color: #fff;
+}
+
+
 /* Back button */
 .back-nav {
   max-width: 1100px;
@@ -316,16 +325,19 @@ body {
   text-align: center;
   margin: 40px auto 20px;
   max-width: 900px;
+  color: #fff;
 }
 
 .skills-header h1 {
   font-size: 3rem;
   letter-spacing: 0.1em;
+  color: #fff;
 }
 
 .skills-header p {
   margin-top: 10px;
   opacity: 0.8;
+  color: #fff;
 }
 
 /* Navigation */
@@ -520,18 +532,22 @@ body {
   margin-bottom: 12px;
   letter-spacing: 0.05em;
   color: #f5e9d6;
+  font-size: 45px;
 }
 
 .about-text p {
   margin-bottom: 16px;
   line-height: 1.6;
   color: #f5e9d6;
+  font-size: 21px;
 }
 
 .about-links {
   list-style: none;
   padding: 0;
   margin-top: 12px;
+  font-size: 18px;
+  color:#f5e9d6;
 }
 
 .about-links li {
@@ -548,4 +564,133 @@ body {
   .about-content {
     grid-template-columns: 1fr;
   }
+}
+
+.skills-text {
+  max-width: 520px;
+}
+
+.skills-text p {
+  color:#f5e9d6;
+  font-size: 18px;
+}
+
+.skills-text.text-left {
+  text-align: left;
+}
+
+.skills-text.text-right {
+  text-align: right;
+}
+
+.project-link {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.project-link:hover {
+  opacity: 0.7;
+}
+
+
+.project-carousel-trigger {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.carousel-frame-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Center the image perfectly inside the frame */
+.carousel-trigger-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;            /* 1000px relative to frame */
+  max-width: 1000px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Frame sits above image visually */
+.carousel-frame {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+
+.carousel-hint {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+
+.carousel-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+}
+
+.carousel-image-wrapper {
+  text-align: center;
+}
+
+.carousel-image {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+.carousel-caption {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.carousel-arrow {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.carousel-arrow:hover {
+  opacity: 0.7;
+}
+
+.carousel-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel-frame-wrapper:hover {
+  transform: scale(1.01);
+}
+
+.carousel-frame-wrapper {
+  transition: transform 0.2s ease;
 }

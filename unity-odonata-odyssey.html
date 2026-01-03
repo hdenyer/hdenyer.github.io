@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PROJ – Holden Denyer</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odonata Odyssey (2025) – Holden Denyer</title>
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="IMG/sigbold.png" />
 </head>
 
 <body>
   <div class="container">
 
-    <!-- Banner (reuse site banner) -->
+    <!-- Banner -->
     <header id="banner">
       <div class="banner-wrapper">
         <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
@@ -18,62 +20,127 @@
       </div>
     </header>
 
-    <!-- Back button -->
-    <nav class="back-nav">
-      <a href="unity.html" class="back-button">← Back to Unity Projects</a>
+    <!-- Directory Buttons -->
+    <nav class="project-nav">
+      <a href="unity.html" class="back-button">← Unity</a>
+      <a href="index.html" class="back-button">Gallery</a>
     </nav>
 
-    <!-- Project title -->
+    <!-- Project Header -->
     <section class="project-header">
-      <h1>PROJECT</h1>
-      <p class="project-subtitle">Info • Details • Ingenuity</p>
+      <h1>Odonata Odyssey</h1>
+      <p class="project-subtitle">Unity • Arduino • Physical–Digital Interaction</p>
     </section>
 
-    <!-- PROJECT CONTENT -->
-    <section class="project-content">
+    <!-- Project Overview -->
+    <section class="project-overview">
+      <h2>Overview</h2>
+      <p>
+        Odonata Odyssey is a hybrid physical–digital experience combining Unity,
+        Arduino-based controls, and projection. The project explores embodied
+        navigation, responsive environments, and the relationship between
+        physical motion and virtual space.
+      </p>
+    </section>
 
-      <!-- REUSABLE ROW UNIT -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb.png" alt="Maze Blobber screenshot">
-        </div>
+    <!-- ===================== -->
+    <!-- CAROUSEL 1 -->
+    <!-- ===================== -->
+    <section class="project-carousel-trigger">
 
-        <div class="project-text">
-          <h2>Overview</h2>
-          <p>
-            This project is amazing because x and also because y. 
-          </p>
-        </div>
+      <div class="carousel-frame-wrapper carousel-trigger"
+        data-images="
+          portfolio/unity/odonata/title_screen.png,
+          portfolio/unity/odonata/level0-1.png,
+          portfolio/unity/odonata/level0-2.png,
+          portfolio/unity/odonata/level1-1.png,
+          portfolio/unity/odonata/level1-2.png,
+          portfolio/unity/odonata/level1-3.png
+        "
+        data-captions="
+          Title screen and interaction context,
+          Early level layout exploring spatial constraints,
+          Iteration on lighting and environmental readability,
+          Expanded environment with layered navigation,
+          Physical input mapped to traversal mechanics,
+          Final prototype showcasing system cohesion
+        "
+      >
+
+        <img
+          src="portfolio/unity/odonata/title_screen.png"
+          alt="Odonata Odyssey Preview"
+          class="carousel-trigger-image"
+        >
+
+        <img
+          src="IMG/CarouselFrame.png"
+          alt="Carousel Frame"
+          class="carousel-frame"
+        >
+
       </div>
 
-      <!-- COPY / PASTE THIS BLOCK FOR EACH IMAGE -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb2.png" alt="Gameplay view">
-        </div>
+      <p class="carousel-hint">Click image to view gallery</p>
+    </section>
 
-        <div class="project-text">
-          <h2>Design Goals</h2>
-          <p>
-            The goal was to explore x subject and demonstrate my skills.
-          </p>
-        </div>
+    <!-- ===================== -->
+    <!--       CAROUSEL 2      -->
+    <!-- ===================== -->
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger"
+        data-images="
+          portfolio/unity/odonata/mdday1.png,
+          portfolio/unity/odonata/mdday2.png,
+          portfolio/unity/odonata/mdday3.png,
+          portfolio/unity/odonata/mdday4.png"
+        data-captions="
+          Maryland Day 2025 display set up,
+          Guiding players through educational aspects,
+          Teaching youngins,
+          Being helpful"
+      >
+
+        <!-- Placeholder trigger image -->
+        <img
+          src="portfolio/unity/odonata/mdday1.png"
+          alt="Additional Gallery Placeholder"
+          class="carousel-trigger-image"
+        >
+
+        <img
+          src="IMG/CarouselFrame2.png"
+          alt="Carousel Frame"
+          class="carousel-frame"
+        >
+
       </div>
 
+      <p class="carousel-hint">Click image to view gallery</p>
     </section>
 
   </div>
 
-  <!-- Carousel modal -->
+  <!-- ===================== -->
+  <!-- SHARED CAROUSEL MODAL -->
+  <!-- ===================== -->
   <div id="carousel-modal" class="carousel-modal">
     <span class="carousel-close">&times;</span>
-    <img class="carousel-image" src="" alt="">
-    <div class="carousel-controls">
-      <button id="prev">‹</button>
-      <button id="next">›</button>
+
+    <div class="carousel-content">
+      <button class="carousel-arrow left">‹</button>
+
+      <div class="carousel-image-wrapper">
+        <img class="carousel-image" src="" alt="">
+        <p class="carousel-caption"></p>
+      </div>
+
+      <button class="carousel-arrow right">›</button>
     </div>
   </div>
 
   <script src="JS/carousel.js"></script>
 </body>
+
 </html>
