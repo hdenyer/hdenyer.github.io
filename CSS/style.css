@@ -24,7 +24,8 @@ body {
   max-width: 1250px;
   margin: 20px auto;
   text-align: center;
-  z-index: 1; /* ensures banner sits above body background but below other sections */
+  z-index: 1;
+  /* ensures banner sits above body background but below other sections */
 }
 
 /* Wrapper keeps both images aligned and scaled */
@@ -47,11 +48,15 @@ body {
 /* GIF sits *inside* the frame */
 .banner-gif {
   position: absolute;
-  top: 25%;        /* roughly centers vertically (100px offset within 400px frame) */
-  left: 10%;       /* roughly centers horizontally (125px offset within 1250px frame) */
-  width: 80%;      /* 1000px of 1250px total width */
+  top: 25%;
+  /* roughly centers vertically (100px offset within 400px frame) */
+  left: 10%;
+  /* roughly centers horizontally (125px offset within 1250px frame) */
+  width: 80%;
+  /* 1000px of 1250px total width */
   height: auto;
-  z-index: 1;      /* places GIF *under* the frame */
+  z-index: 1;
+  /* places GIF *under* the frame */
 }
 
 /* Ensures other sections start below banner */
@@ -65,7 +70,8 @@ body {
 
 
 .container {
-  max-width: 1600px;   /* wider max width than before */
+  max-width: 1600px;
+  /* wider max width than before */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -81,8 +87,10 @@ body {
 
 /* Banner centered and allowed to grow larger */
 #banner {
-  width:100%;           /* fill most of the page width */
-  max-width: 1200px;    /* larger than before */
+  width: 100%;
+  /* fill most of the page width */
+  max-width: 1200px;
+  /* larger than before */
   margin: 20px auto;
   text-align: center;
 }
@@ -90,22 +98,26 @@ body {
 /* Welcome image */
 .welcome-section {
   width: 90%;
-  max-width: 1200px;     /* slight bump up */
+  max-width: 1200px;
+  /* slight bump up */
   margin: 20px auto;
 }
 
 /* About frame – smaller than banner and centered */
 #about {
-  width: 60%;           /* smaller relative to banner */
+  width: 60%;
+  /* smaller relative to banner */
   max-width: 700px;
   margin: 40px auto;
-  text-align: center;   /* makes sure it’s centered */
+  text-align: center;
+  /* makes sure it’s centered */
 }
 
 /* Gallery layout */
 .gallery-wall {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* four equal columns */
+  grid-template-columns: repeat(4, 1fr);
+  /* four equal columns */
   gap: 20px;
   max-width: 1250px;
   margin: 20px auto;
@@ -134,13 +146,15 @@ body {
 
 /* This forces one small frame to stack directly above the other */
 .gallery-item.small.tall {
-  grid-row: span 2; /* takes up same vertical height as large frame */
+  grid-row: span 2;
+  /* takes up same vertical height as large frame */
 }
 
 /* "Wide" frames are short and stretch horizontally */
 .gallery-item.wide {
   grid-column: span 2;
-  grid-row: span 1;   /* half the height of .large */
+  grid-row: span 1;
+  /* half the height of .large */
 }
 
 /* Optional variants for wider compositions */
@@ -156,6 +170,7 @@ body {
 
 /* Mobile adjustment: full-width and shorter */
 @media (max-width: 900px) {
+
   .gallery-item.wide,
   .gallery-item.wide-3,
   .gallery-item.wide-4 {
@@ -169,10 +184,12 @@ body {
   .gallery-wall {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .gallery-item.large {
     grid-column: span 2;
     grid-row: span 1;
   }
+
   .gallery-item.small,
   .gallery-item.small.tall {
     grid-column: span 1;
@@ -264,7 +281,7 @@ body {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -434,21 +451,100 @@ html {
   width: 100%;
   text-align: center;
   padding: 20px 0;
-  background-color: #3a0a0a; /* dark reddish footer, matches your theme */
+  background-color: #6C0F0F;
   color: #f5e9d6;
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   margin-top: 40px;
 }
 
-/* Optional: make footer stick to bottom if page content is short */
-html, body {
+html,
+body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .container {
-  flex: 1; /* pushes footer to bottom if content is short */
+  flex: 1;
 }
 
+.subskills-menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0 60px;
+  flex-wrap: wrap;
+}
+
+.subskills-menu a {
+  color: #f5e9d6;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-size: 0.9rem;
+}
+
+.subskills-menu a:hover {
+  text-decoration: underline;
+}
+
+.skills-subsection {
+  margin-bottom: 80px;
+}
+
+.subsection-title {
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 0.2em;
+  color: #f5e9d6;
+}
+
+
+/* ABOUT PAGE LAYOUT */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  margin: 60px auto;
+  max-width: 1200px;
+  align-items: start;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.about-text p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.about-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.about-links li {
+  margin-bottom: 8px;
+}
+
+.about-links a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
