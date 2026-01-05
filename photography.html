@@ -35,29 +35,8 @@
       <!-- PROJECT ROW -->
       <div class="skills-row">
         <div class="skills-image">
-          <a href="photo-masters-of-the-universe.html">
-            <img src="IMG/photography/masters_of_the_universe_thumb.png" alt="Masters of the Universe">
-          </a>
-        </div>
-
-        <div class="skills-text">
-          <h2>
-            <a href="photo-masters-of-the-universe.html" class="project-link">
-              Masters of the Universe (2024)
-            </a>
-          </h2>
-          <p>
-            A conceptual portrait series examining identity, power,
-            and self-mythology through staged photographic environments.
-          </p>
-        </div>
-      </div>
-
-      <!-- PROJECT ROW -->
-      <div class="skills-row">
-        <div class="skills-image">
           <a href="photo-professional-work.html">
-            <img src="IMG/photography/professional_work_thumb.png" alt="Professional Work">
+            <img src="gallery/Prof_Frame1.png" alt="Professional Work">
           </a>
         </div>
 
@@ -76,9 +55,30 @@
 
       <!-- PROJECT ROW -->
       <div class="skills-row">
+
+        <div class="skills-text">
+          <h2>
+            <a href="photo-masters-of-the-universe.html" class="project-link">
+              Masters of the Universe (2024)
+            </a>
+          </h2>
+          <p>
+            A conceptual portrait series examining identity, power,
+            and self-mythology through staged photographic environments.
+          </p>
+        </div>
+        <div class="skills-image">
+          <a href="photo-masters-of-the-universe.html">
+            <img src="gallery/Masters_Frame2.png" alt="Masters of the Universe">
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT ROW -->
+      <div class="skills-row">
         <div class="skills-image">
           <a href="photo-anniversary.html">
-            <img src="IMG/photography/anniversary_thumb.png" alt="Anniversary">
+            <img src="gallery/Anniversary_Frame3.png" alt="Anniversary">
           </a>
         </div>
 
@@ -96,28 +96,38 @@
       </div>
 
       <!-- PROJECT ROW -->
-      <div class="skills-row">
-        <div class="skills-image">
-          <a href="photo-sea-of-green.html">
-            <img src="IMG/photography/sea_of_green_thumb.png" alt="Sea of Green">
-          </a>
-        </div>
-
+      <div class="skills-row single-image-trigger" data-image="portfolio/photography/sea.jpg"
+        data-caption="Sea of Green (2023)">
         <div class="skills-text">
-          <h2>
-            <a href="photo-sea-of-green.html" class="project-link">
-              Sea of Green (2023)
-            </a>
-          </h2>
-          <p>
-            A landscape-focused series exploring repetition, scale,
-            and atmosphere through agricultural and natural environments.
-          </p>
+          <h2 class="project-link">Sea of Green (2023)</h2>
+          <p>A landscape portrait.</p>
+        </div>
+        <div class="skills-image">
+          <img src="gallery/Sea_Frame1.png" alt="Olde Dude">
         </div>
       </div>
 
     </section>
 
   </div>
+
+  <!-- Carousel Modal -->
+  <div id="carousel-modal" class="carousel-modal">
+    <span class="carousel-close">&times;</span>
+
+    <div class="carousel-content">
+      <button class="carousel-arrow left">&#10094;</button>
+
+      <div class="carousel-image-wrapper">
+        <img class="carousel-image" src="" alt="">
+        <div class="carousel-caption"></div>
+      </div>
+
+      <button class="carousel-arrow right">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="JS/carousel.js"></script>
+
 </body>
 </html>
