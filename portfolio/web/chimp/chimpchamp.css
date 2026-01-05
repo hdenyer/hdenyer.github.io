@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background: black url(pics/jungle.jpeg) scroll no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 375px;
+    margin: 0;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+  
+  
+  #resetButts {
+    position: fixed;
+    bottom: 20px;
+    background-color: #D6045F;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 2em;
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  #butt1, #butt2, #butt3, #butt4, #butt5, #butt6, #butt7, #butt8, #butt9 {
+    background-image: url(pics/leafy.png);
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+  }  

@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background: black url(pics/jungle.jpeg) scroll no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titlePic {
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+  }
+  
+  .bigLink-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .bigLink {
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    font-size: 3em;
+    background-color: white;
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  .playOption {
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    font-size: 3em;
+    background-color: white;
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 500px;
+    background: white;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    border-radius:10px;
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-weight: bold;
+    color:#5F8C2F;
+  }
+  
+  a:link {
+    color: #5F8C2F;
+  }
+  
+  a:visited {
+    color: #5F8C2F;
+  }
+  
+  a:hover {
+    color: #D6045F;
+  }
+  
+  a:active {
+    color: goldenrod;
+  }  

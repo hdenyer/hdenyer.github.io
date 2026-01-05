@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chimp Champ Chomp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="chimpchamp.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <script src="chimpchamp.js"></script>
+</head>
+<body>
+  <audio src="sounds/backgroundmusic.mp3" autoplay loop></audio>
+<div class="board-container">
+  <div class="board">
+      <input type="button" id="butt1" onclick="square1C(); checkWin()"></input>
+      <input type="button" id="butt2" onclick="square2C(); checkWin()"></input>
+      <input type="button" id="butt3" onclick="square3C(); checkWin()"></input>
+      <input type="button" id="butt4" onclick="square4C(); checkWin()"></input>
+      <input type="button" id="butt5" onclick="square5C(); checkWin()"></input>
+      <input type="button" id="butt6" onclick="square6C(); checkWin()"></input>
+      <input type="button" id="butt7" onclick="square7C(); checkWin()"></input>
+      <input type="button" id="butt8" onclick="square8C(); checkWin()"></input>
+      <input type="button" id="butt9" onclick="square9C(); checkWin()"></input>
+  </div>
+</div>
+<br>
+<br>
+<br>
+  <button id="resetButts" onclick="resetButts()">RESET</button>
+<br>
+</body>
+</html>

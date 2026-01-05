@@ -1,79 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PROJ – Holden Denyer</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PAGE TITLE -->
+  <!-- Format: Project Name (Year) – Your Name -->
+  <title>holdendenyer.com (2023) – Holden Denyer</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <div class="container">
 
-    <!-- Banner (reuse site banner) -->
+    <!-- ===================== -->
+    <!-- BANNER (Site-wide) -->
+    <!-- ===================== -->
     <header id="banner">
       <div class="banner-wrapper">
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
-        <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <!-- Animated or static banner image -->
+        <img src="IMG/BannerTemp.png"
+             alt="Animated Banner"
+             class="banner-gif">
+
+        <!-- Decorative frame that scales with banner -->
+        <img src="IMG/BannerFrame.png"
+             alt="Banner Frame"
+             class="banner-frame">
+
       </div>
     </header>
 
-    <!-- Back button -->
-    <nav class="back-nav">
-      <a href="web.html" class="back-button">← Back to Web Design Projects</a>
+    <!-- ===================== -->
+    <!-- DIRECTORY / NAV BUTTONS -->
+    <!-- ===================== -->
+    <nav class="project-nav">
+
+      <!-- Link back to parent skill page -->
+      <!-- Example: unity.html, web.html, adobe.html -->
+      <a href="web.html" class="back-button">← Web Design</a>
+
+      <!-- Link back to main gallery / home -->
+      <a href="index.html" class="back-button">Gallery</a>
+
     </nav>
 
-    <!-- Project title -->
+    <!-- ===================== -->
+    <!-- PROJECT HEADER -->
+    <!-- ===================== -->
     <section class="project-header">
-      <h1>PROJECT</h1>
-      <p class="project-subtitle">Info • Details • Ingenuity</p>
+
+      <!-- PROJECT TITLE -->
+      <h1>holdendenyer.com (2023)</h1>
+
+      <!-- SHORT DESCRIPTOR -->
+      <!-- Example: Unity • Arduino • Installation -->
+      <p class="project-subtitle">
+        PRIMARY TOOL • SECONDARY TOOL • CONTEXT / THEME
+      </p>
+
     </section>
 
-    <!-- PROJECT CONTENT -->
-    <section class="project-content">
+    <!-- ===================== -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ===================== -->
+    <section class="project-overview">
 
-      <!-- REUSABLE ROW UNIT -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb.png" alt="Maze Blobber screenshot">
-        </div>
+      <h2>Overview</h2>
 
-        <div class="project-text">
-          <h2>Overview</h2>
-          <p>
-            This project is amazing because x and also because y. 
-          </p>
-        </div>
+      <p>
+        This project explores [CORE IDEA OR QUESTION].
+        It was created using [TOOLS / SOFTWARE / MEDIA]
+        and focuses on [INTERACTION, DESIGN GOAL, OR CONCEPT].
+      </p>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- CAROUSEL TRIGGER -->
+    <!-- ===================== -->
+    <!-- Single framed image that opens the full carousel -->
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger"
+
+        data-images=""
+        data-captions=""
+      >
+        <img
+          src="portfolio/web/holden/home.jpg"
+          alt="Project Preview Image"
+          class="carousel-trigger-image"
+        >
+
+        <!-- FRAME OVERLAY -->
+        <a href="portfolio/web/holden/index.html">
+        <img
+          src="IMG/CarouselFrame.png"
+          alt="Carousel Frame"
+          class="carousel-frame"
+        >
+        </a>
+
       </div>
 
-      <!-- COPY / PASTE THIS BLOCK FOR EACH IMAGE -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb2.png" alt="Gameplay view">
-        </div>
-
-        <div class="project-text">
-          <h2>Design Goals</h2>
-          <p>
-            The goal was to explore x subject and demonstrate my skills.
-          </p>
-        </div>
-      </div>
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
 
     </section>
 
   </div>
 
-  <!-- Carousel modal -->
+  <!-- ===================== -->
+  <!-- CAROUSEL MODAL -->
+  <!-- ===================== -->
+  <!-- Hidden until triggered -->
   <div id="carousel-modal" class="carousel-modal">
+
+    <!-- Close button -->
     <span class="carousel-close">&times;</span>
-    <img class="carousel-image" src="" alt="">
-    <div class="carousel-controls">
-      <button id="prev">‹</button>
-      <button id="next">›</button>
+
+    <div class="carousel-content">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow left">‹</button>
+
+      <!-- Image + caption container -->
+      <div class="carousel-image-wrapper">
+
+        <!-- Active carousel image -->
+        <img class="carousel-image" src="" alt="">
+
+        <!-- Caption for active image -->
+        <p class="carousel-caption"></p>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow right">›</button>
+
     </div>
   </div>
 
+  <!-- ===================== -->
+  <!-- CAROUSEL SCRIPT -->
+  <!-- ===================== -->
   <script src="JS/carousel.js"></script>
+
 </body>
 </html>

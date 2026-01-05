@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- PAGE TITLE -->
-  <title>Control Deck (2025-) – Holden Denyer</title>
+  <title>Blob Bob (2023) – Holden Denyer</title>
 
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="IMG/sigbold.png" />
@@ -49,7 +49,7 @@
     <section class="project-header">
 
       <!-- PROJECT TITLE -->
-      <h1>Control Deck</h1>
+      <h1>Blob Bob</h1>
 
       <!-- SHORT DESCRIPTOR -->
       <!-- Example: Unity • Arduino • Installation -->
@@ -66,43 +66,86 @@
 
       <h2>Overview</h2>
 
-      <!--
-        1–2 short paragraphs describing:
-        • What the project is
-        • What problem or idea it explores
-        • Tools, systems, or concepts involved
-      -->
       <p>
-        This project explores [CORE IDEA OR QUESTION].
-        It was created using [TOOLS / SOFTWARE / MEDIA]
-        and focuses on [INTERACTION, DESIGN GOAL, OR CONCEPT].
+        Bob the blob has been separated from his blob family! 
+        Help him navigate an ever-changing maze with his unique blob powers.
       </p>
+      <br>
+      <p>
+        Developed in Unity and programmed in C# to demonstrate puzzle mechanics. 
+        The player is presented with 3 distinct powerups: grow, shrink and color change. 
+        Growing allows the player to jump over tall objects, whereas shrinking 
+        lets Bob slip through small spaces. Certain areas of the maze are marked by 
+        color-coded transluscent barriers. When Bob is the same color as the barrier, the 
+        player can 'morph' through the correlated wall. This encourages a distinct sequence
+        of interactions to solve puzzles and escape the maze!
+      </p>
+
 
     </section>
 
     <!-- ===================== -->
     <!-- CAROUSEL TRIGGER -->
     <!-- ===================== -->
-    <!-- Single framed image that opens the full carousel -->
     <section class="project-carousel-trigger">
 
       <div class="carousel-frame-wrapper carousel-trigger" data-images="
-          PATH/TO/IMAGE-01.png,
-          PATH/TO/IMAGE-02.png,
-          PATH/TO/IMAGE-03.png
+          portfolio/unity/blob/blob3.png,
+          portfolio/unity/blob/blob2.png,
+          portfolio/unity/blob/blob1.png
         " data-captions="
-          Caption describing image 1,
-          Caption describing image 2,
-          Caption describing image 3
+          A star-filled main scene with floating islands to accent the horizon,
+          A smaller demo island guides the player through the various kinds of obstacles and powerups,
+          Blob Bob's family waiting at the end goal!
         ">
 
         <!--
           TRIGGER IMAGE:
         -->
-        <img src="PATH/TO/TRIGGER-IMAGE.png" alt="Project Preview Image" class="carousel-trigger-image">
+        <img src="portfolio/unity/blob/blob3.png" alt="Project Preview Image" class="carousel-trigger-image">
 
         <!-- FRAME OVERLAY -->
         <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
+
+      </div>
+
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
+
+    </section>
+
+    <section class="project-overview">
+
+      <h2>Character Design</h2>
+
+      <p>
+        Blob Bob's character was modeled in Blender, using several bone armatures
+        to provide some sense of rigidity and maintain shape. This model was then
+        imported to Unity, where it's translucent material and shading were created. 
+      </p>
+
+
+    </section>
+
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/unity/blob/blob0.png,
+          portfolio/unity/blob/blob00.png
+        " data-captions="
+          A front view of Bob's model with visible armatures,
+          A side view captures the presence of a bone on each major axis for a total of 6
+        ">
+
+        <!--
+          TRIGGER IMAGE:
+        -->
+        <img src="portfolio/unity/blob/blob0.png" alt="Project Preview Image" class="carousel-trigger-image">
+
+        <!-- FRAME OVERLAY -->
+        <img src="IMG/Frame3.png" alt="Carousel Frame" class="carousel-frame">
 
       </div>
 

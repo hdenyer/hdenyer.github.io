@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>about</title>
+<style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+			margin-bottom: 100px;
+			margin-left: 20px;
+            height: 625px;
+        }
+
+        #image {
+            width: 400px;
+            height: 625px;
+        }
+
+        #text-container {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+			align-content: center;
+			width: 500px;
+        }
+
+        p {
+            text-align: left;
+			font-size: 24px;
+        }
+	
+	.home-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            height: 100px;
+            width: 200px;
+            color: transparent;
+            border: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            background-image: url("IMG/Button.png");
+        }
+
+        .home-button:hover {
+            background-image: url("IMG/Button2.png");
+        }
+	
+	#about-frame {
+		position: absolute;
+	}
+	
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="image">
+			<img src="IMG/About_framevert.png" alt="frame" id="about-frame">
+			<img src="IMG/aboutimagevert.png" alt="Holden Denyer">
+		</div>
+		
+        <div id="text-container">
+            <p>
+                Holden Denyer is a master of mediocrity. <br>
+<br>
+Born and raised in Maryland, Denyer is inspired by what he finds around him - which is definitely not the worst, but also definitely not the best. He finds occasional passion in creativity, to which he expels and experiments with it in various mediums.<br><br>Denyer is a perfectionist, his greatest curse. His efforts are placed most in the little details, a gift to those who look. Denyer's work continues to take on new forms, each striving to be his best piece yet.<br><br>Stay up to date on his latest works: <br><br>
+<a href="https://www.youtube.com/@hdenyer401/featured">H Denyer on YouTube</a>
+
+            </p>
+        </div>
+		<button class="home-button" onclick="window.location.href='index.html'"></button>
+    </div>
+</body>
+</html>

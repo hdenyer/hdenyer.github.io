@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL-HOLDENDENYER.com</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        #container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display-frame {
+            width: 65%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        #image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .home-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            height: 100px;
+            width: 200px;
+            color: transparent;
+            border: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            background-image: url("IMG/Button.png");
+        }
+
+        .home-button:hover {
+            background-image: url("IMG/Button2.png");
+        }
+
+        #enlarged-image-container {
+            position: fixed;
+            height: 540px;
+            width: 540px;
+            top: 48%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        #enlarged-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #textbox-container {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            transform: translate(0, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+			text-align: left;
+			line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="IMG/Frame2.png" alt="frame" class="display-frame">
+		<div id="image-container">
+            <img src="portfolio/olddudeT.png" alt="Image 1" class="thumbnail" data-info="Olde Dude<br>Ink on bristol<br>18x22<br>2023" data-src="portfolio/olddude.png">
+            <img src="portfolio/abstractT.png" alt="Image 2" class="thumbnail" data-info="Smooch<br>Mixed composition<br>15x20<br>2023" data-src="portfolio/abstract.png">
+            <img src="portfolio/finalcollageT.png" alt="Image 3" class="thumbnail" data-info="The Great Defeat<br>Mixed composition<br>26x38<br>2023" data-src="portfolio/finalcollage.png">
+            <img src="portfolio/vinesT.jpg" alt="Image 4" class="thumbnail" data-info="Vines of Old<br>Charcoal on bristol<br>24x24<br>2023" data-src="portfolio/vines.jpeg">
+            <img src="portfolio/stilllife1T.jpg" alt="Image 5" class="thumbnail" data-info="In Wine and Death<br>Charcoal on bristol<br>24x36<br>2023" data-src="portfolio/stilllife1.jpeg">
+        </div>
+        <button class="home-button" onclick="window.location.href='index.html'"></button>
+    </div>
+
+    <div id="enlarged-image-container">
+        <img id="enlarged-image" src="portfolio/olddude.png" alt="Enlarged Image">
+    </div>
+
+    <div id="textbox-container">
+        <p id="textbox-content"></p>
+    </div>
+
+    <script>
+        const enlargedImageContainer = document.getElementById('enlarged-image-container');
+        const enlargedImage = document.getElementById('enlarged-image');
+        const textboxContainer = document.getElementById('textbox-container');
+        const textboxContent = document.getElementById('textbox-content');
+
+        let isHovered = false;
+
+        document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+            thumbnail.addEventListener('mouseover', () => {
+                isHovered = true;
+                const frameSrc = thumbnail.getAttribute('data-src');
+                enlargedImage.src = frameSrc;
+
+                const info = thumbnail.getAttribute('data-info');
+                textboxContent.innerHTML = info;
+
+                enlargedImageContainer.style.display = 'block';
+                textboxContainer.style.display = 'block';
+            });
+
+            thumbnail.addEventListener('mouseout', () => {
+                isHovered = false;
+            });
+        });
+
+        window.addEventListener('click', (event) => {
+            if (!isHovered && event.target !== enlargedImageContainer && event.target !== textboxContainer) {
+                enlargedImageContainer.style.display = 'none';
+                textboxContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
