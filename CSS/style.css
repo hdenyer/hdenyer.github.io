@@ -203,7 +203,8 @@ body {
   max-width: 1100px;
   margin: 40px auto;
   text-align: center;
-  color: #fff;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-header h1 {
@@ -219,7 +220,8 @@ body {
   max-width: 1100px;
   margin: 40px auto;
   text-align: left;
-  color: #fff;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -227,17 +229,20 @@ body {
 .back-nav {
   max-width: 1100px;
   margin: 20px auto;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .back-button {
-  color: #fff;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   font-weight: bold;
   border-bottom: 2px solid transparent;
 }
 
 .back-button:hover {
-  border-color: #fff;
+  color: #f5e9d6;
 }
 
 /* Project content rows */
@@ -317,25 +322,36 @@ body {
   cursor: pointer;
 }
 
+.gallery-header {
+  text-align: center;
+  margin: 0px auto 20px;
+  max-width: 900px;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* ===== SKILLS PAGE ===== */
 
 .skills-header {
   text-align: center;
   margin: 40px auto 20px;
   max-width: 900px;
-  color: #fff;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .skills-header h1 {
   font-size: 3rem;
   letter-spacing: 0.1em;
-  color: #fff;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .skills-header p {
   margin-top: 10px;
   opacity: 0.8;
-  color: #fff;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Navigation */
@@ -343,19 +359,21 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 10px auto 30px;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .back-button {
   text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #f5e9d6;
+  border: 2px solid #f5e9d6;
   padding: 10px 16px;
   display: inline-block;
   transition: background 0.2s, color 0.2s;
 }
 
 .back-button:hover {
-  background: #fff;
+  background: #f5e9d6;
   color: #6C0F0F;
 }
 
@@ -424,6 +442,8 @@ html {
   justify-content: center;
   gap: 60px;
   margin: 30px 0 50px;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-menu a {
@@ -443,6 +463,8 @@ html {
   gap: 40px;
   margin: 80px 0;
   flex-wrap: wrap;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .skills-button {
