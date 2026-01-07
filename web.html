@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,69 +10,37 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 </head>
 
-<body>
+<body class="page-skill">
   <div class="container">
 
     <!-- Page Header / Banner -->
     <header id="banner">
       <div class="banner-wrapper">
-        <img src="IMG/BannerTemp.png" alt="Banner" class="banner-gif">
-        <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+        <img src="IMG/Web_BannerFrame.png" alt="Banner Frame" class="banner-frame">
       </div>
     </header>
+
+
+    <!-- Back Button -->
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="index.html">
+          <img src="IMG/menuframe_backtogallery.png" alt="BACK TO GALLERY" class="menu-frame">
+        </a>
+      </div>
+    </section>
 
     <!-- Section Header -->
     <header class="skills-header">
-      <h1>WEB DESIGN</h1>
       <p>Interactive websites, playful interfaces, and responsive systems</p>
     </header>
 
-    <!-- Back Button -->
-    <div class="skills-nav">
-      <a href="index.html" class="back-button">← Back to Gallery</a>
-    </div>
-
     <!-- Skills Content -->
     <section class="skills-list">
-
-      <!-- PROJECT ROW -->
-      <div class="skills-row row-left">
-        <div class="project-image">
-          <a href="web-chimp-champ-chomp.html">
-            <img src="gallery/Chimp_Frame1.png" alt="Chimp Champ Chomp">
-          </a>
-        </div>
-
-        <div class="project-label">
-          <h2><a href="web-chimp-champ-chomp.html">Chimp Champ Chomp (2023)</a></h2>
-          <p>
-            A playful, game-like web experience built with HTML, CSS,
-            and JavaScript, emphasizing humor, interaction, and bold visuals.
-          </p>
-        </div>
-      </div>
-
-      <!-- PROJECT ROW -->
-      <div class="skills-row row-right">
-        <div class="project-label">
-          <h2><a href="web-uglymonkeygallery.html">uglymonkeygallery.net (2023)</a></h2>
-          <p>
-            An experimental portfolio site exploring unconventional layout,
-            expressive typography, and intentional visual discomfort.
-          </p>
-        </div>
-
-        <div class="project-image">
-          <a href="web-uglymonkeygallery.html">
-            <img src="gallery/Monkey_Frame2.png" alt="uglymonkeygallery.net">
-          </a>
-        </div>
-      </div>
 
       <!-- PROJECT ROW -->
       <div class="skills-row row-left">
@@ -82,11 +51,72 @@
         </div>
 
         <div class="project-label">
-          <h2><a href="web-holdendenyer.html">holdendenyer.com (2024)</a></h2>
-          <p>
-            A responsive portfolio site designed as a stylized digital gallery,
-            integrating custom layout systems, animation, and interactive framing.
-          </p>
+          <a href="web-holdendenyer.html">
+            <div class="label-header">
+              <span class="title">holdendenyer.com,</span>
+              <span class="date">2024</span>
+            </div>
+
+            <div class="materials">
+              HTML, CSS, JavaScript
+            </div>
+
+            <p class="details">
+              An early take on my personal portfolio site.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT ROW -->
+      <div class="skills-row row-left">
+        <div class="project-label">
+          <a href="web-chimp-champ-chomp.html">
+            <div class="label-header">
+              <span class="title">ChimpChampChomp,</span>
+              <span class="date">2023</span>
+            </div>
+
+            <div class="materials">
+              HTML, CSS, JavaScript
+            </div>
+
+            <p class="details">
+              A chimp-themed take on tic-tac-toe with 1 and 2 player functionality.
+            </p>
+          </a>
+        </div>
+
+        <div class="project-image">
+          <a href="web-chimp-champ-chomp.html">
+            <img src="gallery/Chimp_Frame1.png" alt="Chimp Champ Chomp">
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT ROW -->
+      <div class="skills-row row-right">
+        <div class="project-image">
+          <a href="web-uglymonkeygallery.html">
+            <img src="gallery/Monkey_Frame2.png" alt="uglymonkeygallery.net">
+          </a>
+        </div>
+
+        <div class="project-label">
+          <a href="web-uglymonkeygallery.html">
+            <div class="label-header">
+              <span class="title">monkeygallery.net,</span>
+              <span class="date">2023</span>
+            </div>
+
+            <div class="materials">
+              HTML, CSS
+            </div>
+
+            <p class="details">
+              Challenged to create the ugliest, most dysfunctional site. This was the result!
+            </p>
+          </a>
         </div>
       </div>
 
@@ -94,4 +124,5 @@
 
   </div>
 </body>
+
 </html>

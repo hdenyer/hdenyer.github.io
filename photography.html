@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,32 +10,34 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 </head>
 
-<body>
+<body class="page-skill">
   <div class="container">
 
     <!-- Page Header / Banner -->
     <header id="banner">
       <div class="banner-wrapper">
-        <img src="IMG/BannerTemp.png" alt="Banner" class="banner-gif">
-        <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+        <img src="IMG/Photography_BannerFrame.png" alt="Banner Frame" class="banner-frame">
       </div>
     </header>
 
-    <!-- Section Header -->
-    <header class="skills-header">
-      <h1>PHOTOGRAPHY</h1>
-      <p>Documentary, portraiture, and expressive image-making</p>
-    </header>
 
     <!-- Back Button -->
-    <div class="skills-nav">
-      <a href="index.html" class="back-button">← Back to Gallery</a>
-    </div>
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="index.html">
+          <img src="IMG/menuframe_backtogallery.png" alt="BACK TO GALLERY" class="menu-frame">
+        </a>
+      </div>
+    </section>
+
+    <!-- Section Header -->
+    <header class="skills-header">
+      <p>Documentary, portraiture, and expressive image-making</p>
+    </header>
 
     <!-- Skills Content -->
     <section class="skills-list">
@@ -47,22 +50,40 @@
           </a>
         </div>
         <div class="project-label">
-          <h2><a href="photo-professional-work.html">Professional Work (2025)</a></h2>
-          <p>
-            A selection of commissioned photography including portraits,
-            events, and documentation created for clients and organizations.
-          </p>
+          <a href="photo-prof.html">
+            <div class="label-header">
+              <span class="title">Professional Work,</span>
+              <span class="date">2025</span>
+            </div>
+
+            <div class="materials">
+              Digital Photography
+            </div>
+
+            <p class="details">
+              A collection of professional portraits for university graduation.
+            </p>
+          </a>
         </div>
       </div>
 
       <!-- Row 2 -->
       <div class="skills-row row-right">
         <div class="project-label">
-          <h2><a href="photo-masters-of-the-universe.html">Masters of the Universe (2024)</a></h2>
-          <p>
-            A conceptual portrait series examining identity, power,
-            and self-mythology through staged photographic environments.
-          </p>
+          <a href="photo-masters.html">
+            <div class="label-header">
+              <span class="title">Masters of the Universe,</span>
+              <span class="date">2024</span>
+            </div>
+
+            <div class="materials">
+              Film Photography, Photoshop
+            </div>
+
+            <p class="details">
+              A colorful series of film photographs.
+            </p>
+          </a>
         </div>
         <div class="project-image">
           <a href="photo-masters-of-the-universe.html">
@@ -79,19 +100,38 @@
           </a>
         </div>
         <div class="project-label">
-          <h2><a href="photo-anniversary.html">Anniversary (2023)</a></h2>
-          <p>
-            An intimate photographic series capturing moments of reflection,
-            memory, and quiet celebration across time and place.
-          </p>
+          <a href="photo-anniversary.html">
+            <div class="label-header">
+              <span class="title">Anniversary,</span>
+              <span class="date">2024</span>
+            </div>
+
+            <div class="materials">
+              Film Photography, Photoshop
+            </div>
+
+            <p class="details">
+              A film photography series capturing a couple's most sentimental locations.
+            </p>
+          </a>
         </div>
       </div>
 
       <!-- Row 4 -->
       <div class="skills-row row-right">
         <div class="project-label">
-          <h2>Sea of Green (2023)</h2>
-          <p>A landscape portrait.</p>
+          <div class="label-header">
+            <span class="title">Sea of Green,</span>
+            <span class="date">2023</span>
+          </div>
+
+          <div class="materials">
+            Digital photography, Photoshop
+          </div>
+
+          <p class="details">
+            A portrait of a subject lost in landscape.
+          </p>
         </div>
         <div class="project-image">
           <img src="gallery/Sea_Frame1.png" alt="Sea of Green">
@@ -121,4 +161,5 @@
   <script src="JS/carousel.js"></script>
 
 </body>
+
 </html>
