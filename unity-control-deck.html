@@ -26,11 +26,13 @@
     <header id="banner">
       <div class="banner-wrapper">
 
-        <!-- Animated or static banner image -->
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
-
-        <!-- Decorative frame that scales with banner -->
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>Control Deck</h1>
+          <p class="project-details">2025 • C# and ProCreate in Unity, Arduino</p>
+          <p class="project-subtitle">A submarine themed game utilizing an array of physical inputs.</p>
+        </div>
 
       </div>
     </header>
@@ -38,31 +40,35 @@
     <!-- ===================== -->
     <!-- DIRECTORY / NAV BUTTONS -->
     <!-- ===================== -->
-    <nav class="project-nav">
-
-      <!-- Link back to parent skill page -->
-      <a href="unity.html" class="back-button">← Unity</a>
-
-      <!-- Link back to main gallery / home -->
-      <a href="index.html" class="back-button">Gallery</a>
-
-    </nav>
-
-    <!-- ===================== -->
-    <!-- PROJECT HEADER -->
-    <!-- ===================== -->
-    <section class="project-header">
-
-      <!-- PROJECT TITLE -->
-      <h1>Control Deck</h1>
-
-      <!-- SHORT DESCRIPTOR -->
-      <!-- Example: Unity • Arduino • Installation -->
-      <p class="project-subtitle">
-        PRIMARY TOOL • SECONDARY TOOL • CONTEXT / THEME
-      </p>
-
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="unity.html">
+          <img src="IMG/prev_unity.png" alt="TO UNITY" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="unity-odonata-odyssey.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
+
+    <section class="nav-row">
+      <div class="icon-nav">
+        <a href="https://youtu.be/dlQDUvysP7Y">
+          <img src="IMG/miniframe_tube.png" title="YouTube Demo" alt="YouTube Demo"
+            class="responsive-icon">
+        </a>
+        <a href="https://github.com/hdenyer/ControlDeck">
+          <img src="IMG/miniframe_git.png" title="GitHub Repo" alt="GitHub Repo" class="responsive-icon">
+        </a>
+        <a href="mailto:holdendenyer@gmail.com?subject=Control%Deck%20/(2025/)">
+          <img src="IMG/miniframe_contact.png" title="Contact Me About This Project" alt="Contact Me" class="responsive-icon">
+        </a>
+      </div>
+    </section>
+
 
     <!-- ===================== -->
     <!-- PROJECT OVERVIEW -->
@@ -128,16 +134,88 @@
 
     <section class="project-overview">
 
-      <h2>Project Goal</h2>
+      <h2>Introduction</h2>
       <p>
-        This project explores how tactile interfaces can heighten immersion,
-         challenge the player, and enhance the narrative of operating a complex 
-         machine. By combining physical input systems, custom hardware, and digital
-          game environments, this work demonstrates how interactive media can unify
-           engineering, game design, art, and experiential storytelling. This 
-           prototype serves as a foundation for a future large-scale installation
-            or arcade-style experience, reinforcing the value of physical interaction
-             in digital gameplay.
+        Control Deck is a programmable control interface and Unity game prototype designed around the aesthetics and logic
+        of submarine operations. The player is tasked with completing system commands under time pressure using real-world
+        physical controls. Each button, dial, and switch corresponds to an instruction within the Unity-based simulation,
+        creating a hybrid interaction model that blends tactile input with digital event handling.
+      </p>
+      <p>
+        The project explores the experiential qualities of physical interfaces: how tactile switches, mechanical feedback,
+        and spatial layouts alter the cognitive and sensory experience of interacting with software. Where traditional game
+        interfaces favor speed and abstraction, Control Deck focuses on precision, procedure, and operator behavior.
+      </p>
+      <p>
+        During gameplay, Unity sends context-driven commands (e.g., “PRESS Button D8”, “SET Dial A2 to MID”, “FLIP Switch
+        D29”), and the system waits for the user to locate and operate the correct physical control. The task emphasizes
+        recognition, memory, reaction time, and state awareness, similar to industrial and navigational control systems.
+      </p>
+      <p>
+        This approach invites reflection on tangible interfaces in simulation environments, showing how physical input can
+        promote immersion through materiality instead of solely through graphics or audio feedback.
+      </p>
+
+    </section>
+
+    <section class="project-overview">
+
+      <h2>Methods</h2>
+      <p>
+        Control Deck integrates hardware, firmware, and software to create a cohesive physical–digital control loop. The
+        system consists of a physical control board, an Arduino Mega for IO handling, a custom serial protocol, and a Unity
+        game client. Several components were developed to support real-time communication:
+      </p>
+
+      <ul>
+        <li><strong>Arduino Firmware:</strong> scans digital and analog inputs and transmits updates using a parsable
+          serial protocol</li>
+        <li><strong>SerialManager.cs:</strong> handles asynchronous serial reading and input validation inside Unity</li>
+        <li><strong>CommandManager.cs:</strong> generates time-based tasks and checks correctness of inputs</li>
+        <li><strong>UI Feedback System:</strong> displays active commands and response indicators to the player</li>
+        <li><strong>Hardware Input Map:</strong> defines the mapping between physical pin numbers and in-game identifiers
+        </li>
+      </ul>
+
+      <p>
+        The Arduino firmware outputs hardware state messages in a consistent format:
+      </p>
+
+      <ul>
+        <li><code>BTN,pin,value:</code> momentary button inputs</li>
+        <li><code>SW,pin,value:</code> toggle switch states</li>
+        <li><code>ANA,index,value:</code> analog dial readings</li>
+      </ul>
+
+      <p>
+        In Unity, these messages are parsed into actionable events. Controls are organized into three categories reflecting
+        submarine interface logic:
+      </p>
+
+      <ul>
+        <li><strong>Buttons:</strong> trigger single actions (acknowledge, fire, confirm, etc.)</li>
+        <li><strong>Switches:</strong> represent persistent subsystem states (arm/disarm, open/closed, on/off)</li>
+        <li><strong>Dials:</strong> simulate variable instrumentation (depth, pressure, signal tuning, etc.)</li>
+      </ul>
+
+      <p>
+        To maintain readability and immersion, Unity renders commands visually and waits for valid responses. Reaction
+        timing, precision, and correctness form the basis of scoring and difficulty scaling.
+      </p>
+
+      <p>
+        On the hardware side, inputs are handled through a structured pin map:
+      </p>
+
+      <ul>
+        <li><strong>Digital Buttons:</strong> D2–D24 (INPUT_PULLUP)</li>
+        <li><strong>Toggle Switches:</strong> D26–D35</li>
+        <li><strong>Analog Dials:</strong> A0–A6</li>
+      </ul>
+
+      <p>
+        A custom debounce and change-detection strategy was implemented for switches and buttons, while analog noise was
+        controlled through step-based value thresholds to prevent excessive serial traffic.
       </p>
 
     </section>
@@ -171,6 +249,36 @@
         Click image to view gallery
       </p>
 
+    </section>
+
+    <section class="project-overview">
+      <h2>Takeaways</h2>
+
+      <p>
+        Control Deck required development across multiple disciplines, including embedded programming, serial
+        communication, Unity architecture, and physical fabrication. Coordinating these components provided valuable insight
+        into how hardware design and software systems negotiate timing, reliability, and interaction patterns.
+      </p>
+
+      <p>
+        A key takeaway involved designing interaction behaviors that respect human input. Physical interfaces introduce
+        momentum, dexterity, and hesitation- factors rarely considered in digital UX. Building timing buffers, analog settling
+        windows, and validation logic ensured the system responded like real control equipment rather than an arcade button
+        panel.
+      </p>
+
+      <p>
+        Another major area of learning came from Unity’s threading and serial IO constraints. Managing asynchronous input
+        streams while keeping the UI responsive demanded careful architectural decisions around queues, state machines, and
+        command validation.
+      </p>
+
+      <p>
+        Ultimately, Control Deck demonstrated how meaningful physical interaction can reshape gameplay. The project now
+        serves as a foundation for future work in tangible interfaces, simulation training, and interactive installations.
+        Planned enhancements include expanding the panel’s physical footprint, introducing modular subsystems, and refining
+        the in-game scenario logic to support more complex operations.
+      </p>
     </section>
 
   </div>

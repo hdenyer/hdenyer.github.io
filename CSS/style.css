@@ -98,6 +98,48 @@ body.page-project {
   /* places GIF *under* the frame */
 }
 
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* prevents touching borders */
+  height: auto;
+  max-height: 200px;
+  text-align: center;
+  padding: 0 2%;
+  pointer-events: none; /* optional: prevents clicks blocking frame */
+}
+
+.banner-text h1 {
+  margin: 0 0 5px;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
+}
+
+.banner-text .project-subtitle {
+  margin: 3px 0 5px;
+  color: #f5e9d6;
+  opacity: 0.85;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  font-size: clamp(0.4rem, 2vw, 1.3rem);
+}
+
+.banner-text .project-details {
+  margin: 3px 0 5px;
+  color: #f5e9d6;
+  opacity: 0.65;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  font-size: clamp(0.2rem, 1.75vw, 1rem);
+}
+
+
+
 /* Ensures other sections start below banner */
 .welcome-section,
 .gallery-wall,
@@ -288,17 +330,68 @@ body.page-project {
 .project-header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+    color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-subtitle {
   opacity: 0.85;
+    color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-details {
+  opacity: 0.65;
+  color: #f5e9d6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-overview {
-  max-width: 1100px;
-  margin: 40px auto;
-  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1200px;
+  font-family: 'Montserrat', sans-serif;
   color: #f5e9d6;
+  text-align: justify;
+  margin: 50px auto;
+
+  background: rgba(0, 0, 0, 0.35);
+  padding: 10px;
+  border-radius: 6px; /* optional nice visual */
+}
+
+
+.project-overview h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  color: #f5e9d6;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.project-overview p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #f5e9d6;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  line-height: 1.5;
+  opacity: 0.85;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-overview li {
+  margin-bottom: 16px;
+  margin-left: 30px;
+  line-height: 1.6;
+  color: #f5e9d6;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  line-height: 1.5;
+  opacity: 0.85;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -498,7 +591,7 @@ body.page-project {
   display: block;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .skills-nav a {
   max-width: 25vw;
   }
@@ -515,6 +608,12 @@ body.page-project {
 .icon-nav a {
   margin: 0 10px; /* side margin */
   display: inline-block; /* keeps layout tight */
+}
+
+@media (max-width: 800px) {
+  .icon-nav {
+    margin: 0 2px;
+  }
 }
 
 .responsive-icon:hover {
@@ -668,19 +767,6 @@ html {
   transition: transform 0.15s ease;
 }
 
-/* Default images */
-.menu-btn.gallery { background-image: url("IMG/menuframe_gallery.png"); }
-.menu-btn.skills  { background-image: url("IMG/menuframe_skills.png"); }
-.menu-btn.about   { background-image: url("IMG/menuframe_about.png"); }
-.menu-btn.contact { background-image: url("IMG/menuframe_contact.png"); }
-
-/* Hover images */
-.menu-btn.gallery:hover { background-image: url("../IMG/menuframe_gallery_hover.png"); }
-.menu-btn.skills:hover  { background-image: url("../IMG/menuframe_skills_hover.png"); }
-.menu-btn.about:hover   { background-image: url("../IMG/menuframe_about_hover.png"); }
-.menu-btn.contact:hover { background-image: url("../IMG/menuframe_contact_hover.png"); }
-
-
 .skills-menu {
   flex-wrap: wrap;
   color: #f5e9d6;
@@ -783,6 +869,8 @@ body {
   letter-spacing: 0.2em;
   color: #f5e9d6;
 }
+
+
 
 
 /* ABOUT PAGE LAYOUT */
@@ -1047,7 +1135,9 @@ body {
 .carousel-hint {
   margin-top: 12px;
   font-size: 0.9rem;
-  opacity: 0.8;
+  color: #f5e9d6;
+  opacity: 0.65;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .carousel-modal {

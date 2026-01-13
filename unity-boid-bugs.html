@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- PAGE TITLE -->
-  <title>Boid Bugs (2025) – Holden Denyer</title>
+  <title>BOID BUGS (2025) – Holden Denyer</title>
 
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="IMG/sigbold.png" />
@@ -26,11 +26,13 @@
     <header id="banner">
       <div class="banner-wrapper">
 
-        <!-- Animated or static banner image -->
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
-
-        <!-- Decorative frame that scales with banner -->
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>BOID BUGS</h1>
+          <p class="project-details">2025 • C# and ProCreate in Unity</p>
+          <p class="project-subtitle">An interactive garden demonstrating insect ecosystem services.</p>
+        </div>
 
       </div>
     </header>
@@ -38,30 +40,36 @@
     <!-- ===================== -->
     <!-- DIRECTORY / NAV BUTTONS -->
     <!-- ===================== -->
-    <nav class="project-nav">
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="unity.html">
+          <img src="IMG/prev_unity.png" alt="TO UNITY" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="unity-boid-bugs-VR.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
+    </section>
 
-      <!-- Link back to parent skill page -->
-      <a href="unity.html" class="back-button">← Unity</a>
-
-      <!-- Link back to main gallery / home -->
-      <a href="index.html" class="back-button">Gallery</a>
-
-    </nav>
-
-    <!-- ===================== -->
-    <!-- PROJECT HEADER -->
-    <!-- ===================== -->
-    <section class="project-header">
-
-      <!-- PROJECT TITLE -->
-      <h1>BOID BUGS</h1>
-
-      <!-- SHORT DESCRIPTOR -->
-      <!-- Example: Unity • Arduino • Installation -->
-      <p class="project-subtitle">
-        PRIMARY TOOL • SECONDARY TOOL • CONTEXT / THEME
-      </p>
-
+    <section class="nav-row">
+      <div class="icon-nav">
+        <a href="https://youtu.be/m6h9deuzYLI">
+          <img src="IMG/miniframe_tube.png" title="YouTube Demo" alt="YouTube Demo"
+            class="responsive-icon">
+        </a>
+        <a href="https://holdendenyer.com/PlayBoidBugs">
+          <img src="IMG/miniframe_play.png" title="Play BOID BUGS" alt="Play BOID BUGS" class="responsive-icon">
+        </a>
+        <a href="https://github.com/hdenyer/BoidBugs">
+          <img src="IMG/miniframe_git.png" title="GitHub Repo" alt="GitHub Repo" class="responsive-icon">
+        </a>
+        <a href="mailto:holdendenyer@gmail.com?subject=BOID%BUGS%20/(2025/)">
+          <img src="IMG/miniframe_contact.png" title="Contact Me About This Project" alt="Contact Me" class="responsive-icon">
+        </a>
+      </div>
     </section>
 
     <!-- ===================== -->
@@ -70,7 +78,6 @@
     <section class="project-overview">
 
       <h2>Overview</h2>
-      <br>
       <p>
         Boid Bugs is an interactive ecosystem simulation 
         inspired by the concept of the insect apocalypse.
@@ -82,22 +89,20 @@
       <p>
         Players interact with a field of insects and flowers — each action influencing the overall balance of the system:
       </p>
-      <br>
-      <p>
-           - Click on the empty garden soil to plant flowers and attract new insects.
-      </p>
-      <br>
-      <p>
-           - Click above the garden soil to spray pesticide clouds that eliminate insects.
-      </p>
-      <br>
-      <p>
-           - The insect population dynamically affects the environment, influencing the sky, trees, and flower health over time.
-      </p>
-      <br>
-      <p>
-        When the population of insects drops too low, the ecosystem begins to decay. Flowers die off, trees lose their leaves, and the sky turns grey with pollution.
-      </p>
+      <ul>
+        <li>
+          Click on the empty garden soil to plant flowers and attract new insects.
+        </li>
+        <li>
+          Click above the garden soil to spray pesticide clouds that eliminate insects.
+        </li>
+        <li>
+          The insect population dynamically affects the environment, influencing the sky, trees, and flower health over time.
+        </li>
+        <li>
+          When the population of insects drops too low, the ecosystem begins to decay. Flowers die off, trees lose their leaves, and the sky turns grey with pollution.
+        </li>
+      </ul>
 
     </section>
 
@@ -132,6 +137,107 @@
       <!-- Optional helper text -->
       <p class="carousel-hint">
         Click image to view gallery
+      </p>
+
+    </section>
+
+    <section class="project-overview">
+      <h2>Introduction</h2>
+
+      <p>
+        BOID BUGS is an interactive landscape which utilizes the Boids algorithm to simulate the movement and behavior of insect populations. This project visualizes an ecological system where the player’s interactions influence both individual and collective insect and environmental behavior.
+      </p>
+
+      <p>
+        The concept is rooted in the ongoing discussion and study of the “Insect Apocalypse,” the dramatic decline in insect populations worldwide due to pesticide use and environmental changes like global warming. This decline has also resulted in a degradation of ecosystems — a telling sign of the essential services insects provide to keep our world running. BOID BUGS uses the boids model as a symbolic and visual medium to represent this fragile balance.
+      </p>
+
+      <p>
+        When the user interacts with the gardenscape, they can plant flowers to attract new insects or spray pesticides to eliminate them. Over time, these actions visibly shape the ecosystem, changing not only the number of insects, but also the health of the environment. As the insect population declines, the sky becomes grim and polluted, the leaves of the trees begin to dwindle, and the plants in the garden start to die. If the user plants more flowers, the insect population increases, and the sky becomes clear, the tree becomes healthy, and a lush garden fills the screen.
+      </p>
+
+      <p>
+        This system aims to evoke reflection on human impact and environmental interdependence, noting that every local decision has visible systemic consequences to this world we all share.
+      </p>
+    </section>
+
+    <section class="project-overview">
+      <h2>Methods</h2>
+
+      <p>
+        Within Unity and using C#, each insect acts as an instance of a Boid prefab controlled by local rules of alignment, cohesion, and separation. The environment reacts dynamically to player interactions using several key functions:
+      </p>
+
+      <ul>
+        <li><strong>BoidManager.cs</strong> controls overall population and environment state</li>
+        <li><strong>Boid.cs</strong> manages per-agent behavior and physics</li>
+        <li><strong>CursorManager.cs</strong> changes the cursor between pesticide and flower mode</li>
+        <li><strong>PesticideZone.cs</strong> handles collision-based insect death and despawning</li>
+        <li><strong>Flower prefabs</strong> spawn new insects (random value from 1–3) when planted</li>
+      </ul>
+
+      <p>
+        The Boid system used in BOID BUGS is slightly modified, with custom parameters serving the following purposes:
+      </p>
+
+      <ul>
+        <li><strong>neighborRadius:</strong> sensing radius for other boids</li>
+        <li><strong>maxSpeed:</strong> maximum movement speed</li>
+        <li><strong>alignmentWeight:</strong> steering toward group direction</li>
+        <li><strong>cohesionWeight:</strong> steering toward group center</li>
+        <li><strong>separationWeight:</strong> avoidance of other boids</li>
+      </ul>
+
+      <p>
+        Besides the movement system, several aspects of the garden and background provide feedback to the user’s interactions:
+      </p>
+
+      <ul>
+        <li><strong>Sky movement</strong> corresponds to insect population — darker with fewer insects and clear with many.</li>
+        <li><strong>Tree leaves</strong> change based on ecological health: lush and green when &gt;15 insects, brown between 5–15, and absent when &lt;5.</li>
+        <li><strong>Flower decay</strong> begins when population is &lt;10 insects, replacing flowers with dying equivalents before disappearing.</li>
+      </ul>
+    </section>
+
+        <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/unity/boid/designchart.png" 
+          
+          data-captions="
+          Chart mapping out user interaction and resulting effect.
+        ">
+
+        <!--
+          TRIGGER IMAGE:
+        -->
+        <img src="portfolio/unity/boid/designchart.png" alt="Project Preview Image" class="carousel-trigger-image">
+
+        <!-- FRAME OVERLAY -->
+        <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
+
+      </div>
+
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
+
+    </section>
+
+    <section class="project-overview">
+      <h2>Design Justification</h2>
+
+      <p>
+        BOID BUGS’ system maps interaction to visual ecological outcomes in a closed feedback loop:
+      </p>
+
+      <p>
+        The Boids algorithm provides a well-rounded metaphor for ecological interdependence. Each local decision — even small actions like planting a flower or spraying pesticides — modifies the environment on a global scale without direct control. This relationship between interaction and outcome mirrors, in a simplified form, real environmental systems and their impacts.
+      </p>
+
+      <p>
+        Ultimately, it is small, individual actions that collectively define our planet’s health — both our own and the ecosystem services that insects provide.
       </p>
 
     </section>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- PAGE TITLE -->
-  <title>Control Deck (2025-) – Holden Denyer</title>
+  <title>Lerp Heart (2024) – Holden Denyer</title>
 
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="IMG/sigbold.png" />
@@ -26,11 +26,13 @@
     <header id="banner">
       <div class="banner-wrapper">
 
-        <!-- Animated or static banner image -->
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
-
-        <!-- Decorative frame that scales with banner -->
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>Lerp Heart</h1>
+          <p class="project-details">2024 • C# in Unity</p>
+          <p class="project-subtitle">An unsettling animation utilizing linear interpolation interfaces.</p>
+        </div>
 
       </div>
     </header>
@@ -38,31 +40,35 @@
     <!-- ===================== -->
     <!-- DIRECTORY / NAV BUTTONS -->
     <!-- ===================== -->
-    <nav class="project-nav">
-
-      <!-- Link back to parent skill page -->
-      <a href="unity.html" class="back-button">← Unity</a>
-
-      <!-- Link back to main gallery / home -->
-      <a href="index.html" class="back-button">Gallery</a>
-
-    </nav>
-
-    <!-- ===================== -->
-    <!-- PROJECT HEADER -->
-    <!-- ===================== -->
-    <section class="project-header">
-
-      <!-- PROJECT TITLE -->
-      <h1>Control Deck</h1>
-
-      <!-- SHORT DESCRIPTOR -->
-      <!-- Example: Unity • Arduino • Installation -->
-      <p class="project-subtitle">
-        PRIMARY TOOL • SECONDARY TOOL • CONTEXT / THEME
-      </p>
-
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="unity.html">
+          <img src="IMG/prev_unity.png" alt="TO UNITY" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="unity-maze-blobber.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
+
+    <section class="nav-row">
+      <div class="icon-nav">
+        <a href="https://youtube.com/shorts/2zTHO5ch-dg">
+          <img src="IMG/miniframe_tube.png" title="YouTube Demo" alt="YouTube Demo"
+            class="responsive-icon">
+        </a>
+        <a href="https://github.com/hdenyer/IMDM290-A2">
+          <img src="IMG/miniframe_git.png" title="GitHub Repo" alt="GitHub Repo" class="responsive-icon">
+        </a>
+        <a href="mailto:holdendenyer@gmail.com?subject=Lerp%Heart%20/(2024/)">
+          <img src="IMG/miniframe_contact.png" title="Contact Me About This Project" alt="Contact Me" class="responsive-icon">
+        </a>
+      </div>
+    </section>
+
 
     <!-- ===================== -->
     <!-- PROJECT OVERVIEW -->
@@ -71,16 +77,13 @@
 
       <h2>Overview</h2>
 
-      <!--
-        1–2 short paragraphs describing:
-        • What the project is
-        • What problem or idea it explores
-        • Tools, systems, or concepts involved
-      -->
       <p>
-        This project explores [CORE IDEA OR QUESTION].
-        It was created using [TOOLS / SOFTWARE / MEDIA]
-        and focuses on [INTERACTION, DESIGN GOAL, OR CONCEPT].
+        Lerp Heart is an experimental Unity project utilizing Linear Interpretation interfaces.
+        On start, the heart is created with many individual spheres, following coordinates determined by
+        a cartesian formula. The Lerp() command is then used to transform the scale of each sphere in succession,
+        establishing an effect that appears as liquid pumping through the shape. Color is also altered in 
+        this loop, highlighting the scaled up areas with crimson red and furthering the blood-pumping motif
+        and making the classic heart shape all too literal. 
       </p>
 
     </section>
@@ -92,22 +95,18 @@
     <section class="project-carousel-trigger">
 
       <div class="carousel-frame-wrapper carousel-trigger" data-images="
-          PATH/TO/IMAGE-01.png,
-          PATH/TO/IMAGE-02.png,
-          PATH/TO/IMAGE-03.png
+          portfolio/unity/lerp/pulsing_heart.png
         " data-captions="
-          Caption describing image 1,
-          Caption describing image 2,
-          Caption describing image 3
+          A gif capturing the eerie flow that pulses through the heart
         ">
 
         <!--
           TRIGGER IMAGE:
         -->
-        <img src="PATH/TO/TRIGGER-IMAGE.png" alt="Project Preview Image" class="carousel-trigger-image">
+        <img src="" alt="Project Preview Image" class="carousel-trigger-image">
 
         <!-- FRAME OVERLAY -->
-        <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
+        <img src="gallery/LerpHeart_Frame1.png" alt="Carousel Frame" class="carousel-frame">
 
       </div>
 
