@@ -1,224 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- PAGE TITLE -->
-  <title>Upward Spiral (2025) – Holden Denyer</title>
-
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PROJ – Holden Denyer</title>
+  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body class="page-project">
+<body>
   <div class="container">
 
-    <!-- ===================== -->
-    <!-- BANNER (Site-wide) -->
-    <!-- ===================== -->
+    <!-- Banner (reuse site banner) -->
     <header id="banner">
       <div class="banner-wrapper">
-
+        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
-
-        <div class="banner-text">
-          <h1>Upward Spiral</h1>
-          <p class="project-details">2025 • TouchDesigner</p>
-          <p class="project-subtitle">An upward-flowing clock marked by intervals of vibrant light.</p>
-        </div>
-
       </div>
     </header>
 
-    <!-- ===================== -->
-    <!-- DIRECTORY / NAV BUTTONS -->
-    <!-- ===================== -->
-    <section class="nav-row">
-      <div class="skills-nav">
-        <a href="touchdesigner.html">
-          <img src="IMG/prev_td.png" alt="TO TOUCHDESIGNER" class="menu-frame">
-        </a>
-        <a href="index.html">
-          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
-        </a>
-        <a href="td-gobstopper.html">
-          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
-        </a>
-      </div>
+    <!-- Back button -->
+    <nav class="back-nav">
+      <a href="touchdesigner.html" class="back-button">← Back to TouchDesigner Projects</a>
+    </nav>
+
+    <!-- Project title -->
+    <section class="project-header">
+      <h1>PROJECT</h1>
+      <p class="project-subtitle">Info • Details • Ingenuity</p>
     </section>
 
-    <section class="nav-row">
-      <div class="icon-nav">
-        <a href="https://youtu.be/dlQDUvysP7Y">
-          <img src="IMG/miniframe_tube.png" title="YouTube Demo" alt="YouTube Demo"
-            class="responsive-icon">
-        </a>
-        <a href="https://github.com/hdenyer/ControlDeck">
-          <img src="IMG/miniframe_git.png" title="GitHub Repo" alt="GitHub Repo" class="responsive-icon">
-        </a>
-        <a href="mailto:holdendenyer@gmail.com?subject=Rewind%20/(2025/)">
-          <img src="IMG/miniframe_contact.png" title="Contact Me About This Project" alt="Contact Me" class="responsive-icon">
-        </a>
-      </div>
-    </section>
+    <!-- PROJECT CONTENT -->
+    <section class="project-content">
 
+      <!-- REUSABLE ROW UNIT -->
+      <div class="project-row">
+        <div class="project-image">
+          <img src="IMG/maze-blobber-thumb.png" alt="Maze Blobber screenshot">
+        </div>
 
-    <!-- ===================== -->
-    <!-- PROJECT OVERVIEW -->
-    <!-- ===================== -->
-    <section class="project-overview">
-
-      <h2>Overview</h2>
-
-      <p>
-        ...
-      </p>
-
-    </section>
-
-    <!-- ===================== -->
-    <!-- CAROUSEL TRIGGER -->
-    <!-- ===================== -->
-    <!-- Single framed image that opens the full carousel -->
-    <section class="project-carousel-trigger">
-
-      <div class="carousel-frame-wrapper carousel-trigger" data-images="
-          portfolio/unity/control/ControlDeck1.png,
-          portfolio/unity/control/ControlDeck2.png,
-          portfolio/unity/control/ControlDeck3.png,
-          portfolio/unity/control/ControlDeck4.png,
-          portfolio/unity/control/deck.png,
-        " data-captions="
-          Submarine Command start screen with a coral reef view,
-          Making a mistake deducts 1 life and displays damaged wires and cracked glass,
-          Making a second mistake queues an alarm and furthers glass cracking,
-          Making a third mistake queues end game and a blown steam valve,
-          Illustrated model of control deck used to provide in-game commands
-        ">
-
-        <!--
-          TRIGGER IMAGE:
-        -->
-        <img src="portfolio/unity/control/ControlDeck1.png" alt="Project Preview Image" class="carousel-trigger-image">
-
-        <!-- FRAME OVERLAY -->
-        <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
-
+        <div class="project-text">
+          <h2>Overview</h2>
+          <p>
+            This project is amazing because x and also because y. 
+          </p>
+        </div>
       </div>
 
-      <!-- Optional helper text -->
-      <p class="carousel-hint">
-        Click image to view gallery
-      </p>
+      <!-- COPY / PASTE THIS BLOCK FOR EACH IMAGE -->
+      <div class="project-row">
+        <div class="project-image">
+          <img src="IMG/maze-blobber-thumb2.png" alt="Gameplay view">
+        </div>
 
-    </section>
-
-    <section class="project-overview">
-
-      <h2>Introduction</h2>
-      <p>
-        ...
-      </p>
-
-    </section>
-
-    <section class="project-overview">
-
-      <h2>Methods</h2>
-      <p>
-        ...
-      </p>
-
-    </section>
-
-    <section class="project-carousel-trigger">
-
-      <div class="carousel-frame-wrapper carousel-trigger" data-images="
-          portfolio/physical/control/board.png,
-          portfolio/physical/control/sketch.jpg,
-          portfolio/physical/control/cad.png,
-          portfolio/physical/control/wiring.png,
-        " data-captions="
-          The completed prototype unit with over 50 functioning inputs,
-          An initial sketch of the board's layout based on selected input types,
-          CAD drawing of prototype board in Fusion360. Used to scale measurements for laser-cutting,
-          Wiring the inputs to an Arduino Mega controller
-        ">
-
-        <!--
-          TRIGGER IMAGE:
-        -->
-        <img src="portfolio/physical/control/board.png" alt="Project Preview Image" class="carousel-trigger-image">
-
-        <!-- FRAME OVERLAY -->
-        <img src="IMG/CarouselFrame2.png" alt="Carousel Frame" class="carousel-frame">
-
+        <div class="project-text">
+          <h2>Design Goals</h2>
+          <p>
+            The goal was to explore x subject and demonstrate my skills.
+          </p>
+        </div>
       </div>
 
-      <!-- Optional helper text -->
-      <p class="carousel-hint">
-        Click image to view gallery
-      </p>
-
-    </section>
-
-    <section class="project-overview">
-      <h2>Takeaways</h2>
-
-      <p>
-        ...
-      </p>
     </section>
 
   </div>
 
-  <!-- ===================== -->
-  <!-- CAROUSEL MODAL -->
-  <!-- ===================== -->
-  <!-- Hidden until triggered -->
+  <!-- Carousel modal -->
   <div id="carousel-modal" class="carousel-modal">
-
-    <!-- Close button -->
     <span class="carousel-close">&times;</span>
-
-    <div class="carousel-content">
-
-      <!-- Left arrow -->
-      <button class="carousel-arrow left">‹</button>
-
-      <!-- Image + caption container -->
-      <div class="carousel-image-wrapper">
-
-        <!-- Active carousel image -->
-        <img class="carousel-image" src="" alt="">
-
-        <!-- Caption for active image -->
-        <p class="carousel-caption"></p>
-
-      </div>
-
-      <!-- Right arrow -->
-      <button class="carousel-arrow right">›</button>
-
+    <img class="carousel-image" src="" alt="">
+    <div class="carousel-controls">
+      <button id="prev">‹</button>
+      <button id="next">›</button>
     </div>
   </div>
 
-  <!-- ===================== -->
-  <!-- CAROUSEL SCRIPT -->
-  <!-- ===================== -->
   <script src="JS/carousel.js"></script>
-
 </body>
-
-<footer class="site-footer">
-    <p>© 2026 Holden Denyer. All rights reserved.</p>
-</footer>
-
 </html>
