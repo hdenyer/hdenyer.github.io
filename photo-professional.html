@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PAGE TITLE -->
+  <title>Professional Work (2025) – Holden Denyer</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="page-project">
+  <div class="container">
+
+    <!-- ===================== -->
+    <!-- BANNER (Site-wide) -->
+    <!-- ===================== -->
+    <header id="banner">
+      <div class="banner-wrapper">
+
+        <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>Professional Work</h1>
+          <p class="project-details">2025 • Digital Photography</p>
+          <p class="project-subtitle">A collection of professional portraits for university graduation.</p>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ===================== -->
+    <!-- DIRECTORY / NAV BUTTONS -->
+    <!-- ===================== -->
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="photography.html">
+          <img src="IMG/prev_photo.png" alt="TO PHOTOGRAPHY" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="photo-masters.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ===================== -->
+    <section class="project-overview">
+
+      <h2>Overview</h2>
+
+      <p>
+        I was commissioned by a group of graduating students to photograph their 
+        senior portraits across campus, giving me valuable experience in professional 
+        portraiture and event-style photography. The session included a variety of 
+        locations and lighting conditions, as well as creative direction tailored to 
+        each student. One student graduated with honors in entomology, inspiring several 
+        unique shots featuring insects as a thematic touch. All portrait subjects 
+        provided permission to be featured on this site.
+      </p>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- CAROUSEL TRIGGER -->
+    <!-- ===================== -->
+    <!-- Single framed image that opens the full carousel -->
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/photography/grad1.JPG,
+          portfolio/photography/grad2.JPG,
+          portfolio/photography/grad3.JPG,
+          portfolio/photography/grad4.JPG,
+          portfolio/photography/grad5.JPG
+        " data-captions="
+        ">
+
+        <!--
+          TRIGGER IMAGE:
+        -->
+        <img src="portfolio/photography/grad1.JPG" alt="Project Preview Image" class="carousel-trigger-image">
+
+        <!-- FRAME OVERLAY -->
+        <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
+
+      </div>
+
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
+
+    </section>
+
+  </div>
+
+  <!-- ===================== -->
+  <!-- CAROUSEL MODAL -->
+  <!-- ===================== -->
+  <!-- Hidden until triggered -->
+  <div id="carousel-modal" class="carousel-modal">
+
+    <!-- Close button -->
+    <span class="carousel-close">&times;</span>
+
+    <div class="carousel-content">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow left">‹</button>
+
+      <!-- Image + caption container -->
+      <div class="carousel-image-wrapper">
+
+        <!-- Active carousel image -->
+        <img class="carousel-image" src="" alt="">
+
+        <!-- Caption for active image -->
+        <p class="carousel-caption"></p>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow right">›</button>
+
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- CAROUSEL SCRIPT -->
+  <!-- ===================== -->
+  <script src="JS/carousel.js"></script>
+
+</body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
+</html>

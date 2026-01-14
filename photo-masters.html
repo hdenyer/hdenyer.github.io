@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PAGE TITLE -->
+  <title>Masters of the Universe (2024) – Holden Denyer</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="page-project">
+  <div class="container">
+
+    <!-- ===================== -->
+    <!-- BANNER (Site-wide) -->
+    <!-- ===================== -->
+    <header id="banner">
+      <div class="banner-wrapper">
+
+        <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>Masters of the Universe</h1>
+          <p class="project-details">2025 • Film Photography, Photoshop</p>
+          <p class="project-subtitle">A colorful series of film photographs.</p>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ===================== -->
+    <!-- DIRECTORY / NAV BUTTONS -->
+    <!-- ===================== -->
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="photography.html">
+          <img src="IMG/prev_photo.png" alt="TO PHOTOGRAPHY" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="photo-anniversary.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ===================== -->
+    <section class="project-overview">
+
+      <h2>Overview</h2>
+
+      <p>
+        Masters of the Universe is a three-piece film-photography series that 
+        blends analog texture with digital manipulation to create surreal, 
+        otherworldly portraits. Shot on film and later edited in Photoshop, 
+        each piece centers around a dominant color, using hue and contrast to 
+        shape its mood and visual identity. The subjects feel slightly uncanny- 
+        caught in moments that suggest a secret purpose or hidden narrative. 
+        Light flares and color overlays interact uniquely across the series, 
+        heightening the sense of ambiguity and extraterrestrial ambience. Photography
+         subjects provided permission to be featured on this site.
+      </p>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- CAROUSEL TRIGGER -->
+    <!-- ===================== -->
+    <!-- Single framed image that opens the full carousel -->
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/photography/masters0.png,
+          portfolio/photography/masters1.png,
+          portfolio/photography/masters2.png,
+          portfolio/photography/masters3.png
+        " data-captions="
+        ">
+
+        <!-- FRAME OVERLAY -->
+        <img src="portfolio/photography/masters_thumbnail.png" alt="Carousel Frame" class="carousel-frame">
+
+      </div>
+
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
+
+    </section>
+
+  </div>
+
+  <!-- ===================== -->
+  <!-- CAROUSEL MODAL -->
+  <!-- ===================== -->
+  <!-- Hidden until triggered -->
+  <div id="carousel-modal" class="carousel-modal">
+
+    <!-- Close button -->
+    <span class="carousel-close">&times;</span>
+
+    <div class="carousel-content">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow left">‹</button>
+
+      <!-- Image + caption container -->
+      <div class="carousel-image-wrapper">
+
+        <!-- Active carousel image -->
+        <img class="carousel-image" src="" alt="">
+
+        <!-- Caption for active image -->
+        <p class="carousel-caption"></p>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow right">›</button>
+
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- CAROUSEL SCRIPT -->
+  <!-- ===================== -->
+  <script src="JS/carousel.js"></script>
+
+</body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
+</html>

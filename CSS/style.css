@@ -616,6 +616,14 @@ body.page-project {
   }
 }
 
+.icon-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1250px;
+  height: auto;
+  flex-wrap: nowrap;
+}
+
 .responsive-icon:hover {
   transform: scale(1.01);
 }
