@@ -1,79 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PROJ – Holden Denyer</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PAGE TITLE -->
+  <title>Standard Crayons (2025) – Holden Denyer</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="page-project">
   <div class="container">
 
-    <!-- Banner (reuse site banner) -->
+    <!-- ===================== -->
+    <!-- BANNER (Site-wide) -->
+    <!-- ===================== -->
     <header id="banner">
       <div class="banner-wrapper">
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
+
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>Standard Crayons</h1>
+          <p class="project-details">2025 • Colored Wax, Chipboard</p>
+          <p class="project-subtitle">Just some typical wax crayons.</p>
+        </div>
+
       </div>
     </header>
 
-    <!-- Back button -->
-    <nav class="back-nav">
-      <a href="physical.html" class="back-button">← Back to Physical Media Projects</a>
-    </nav>
-
-    <!-- Project title -->
-    <section class="project-header">
-      <h1>PROJECT</h1>
-      <p class="project-subtitle">Info • Details • Ingenuity</p>
+    <!-- ===================== -->
+    <!-- DIRECTORY / NAV BUTTONS -->
+    <!-- ===================== -->
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="physical.html">
+          <img src="IMG/prev_physical.png" alt="TO PHYSICAL MEDIA" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="physical-tunnels-of-light.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
 
-    <!-- PROJECT CONTENT -->
-    <section class="project-content">
+    <!-- ===================== -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ===================== -->
+    <section class="project-overview">
 
-      <!-- REUSABLE ROW UNIT -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb.png" alt="Maze Blobber screenshot">
-        </div>
+      <h2>Overview</h2>
+      <p>
+        <em>Standard Crayons</em> is a sculptural set of seven wax casts of human fingers, 
+        each rendered in a different color and packaged in a flip-top chipboard box modeled 
+        after the classic crayon container. The work literalizes the phrase “art at your fingertips,” 
+        uncomfortably highlighting how normalized finger-based creation has become in today’s digital art landscape.
+      </p>
+      <p>
+        Each cast preserves the unique geometry of a different individual’s finger, introducing subtle 
+        variations in scale, texture, and proportion. When arranged together, these differences evoke a 
+        morbid sense of dismemberment— an uncanny “boxed set” of body parts that blurs the line between tool
+         and limb. Despite their playful colors, the objects carry an unsettling tension between childlike
+          art materials and the biological reality they mimic.
+      </p>
+      <p>
+        The casts were produced using alginate molds taken directly from participants’ fingers, 
+        which were then filled with melted wax and left to harden. The accompanying box was hand-cut 
+        from chipboard and designed to mirror familiar crayon packaging, complete with a flip-top that 
+        reveals the colorful tips of each wax finger. By reframing the finger as both medium and instrument, 
+        <em>Standard Crayons</em> reflects on how our bodies increasingly function as creative interfaces, challenging 
+        viewers to reconsider what counts as a “tool” in contemporary art-making.
+      </p>
 
-        <div class="project-text">
-          <h2>Overview</h2>
-          <p>
-            This project is amazing because x and also because y. 
-          </p>
-        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- CAROUSEL TRIGGER -->
+    <!-- ===================== -->
+    <!-- Single framed image that opens the full carousel -->
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/physical/crayons/inbox.png,
+          portfolio/physical/crayons/outbox.png,
+          portfolio/physical/crayons/doodles.png
+        " data-captions="
+          The crayons fit nicely in their chipboard box with 7 essential colors,
+          A better view of the individual crayons,
+          These typical crayons do crayon things like typical crayons do
+        ">
+
+        <!--
+          TRIGGER IMAGE:
+        -->
+        <img src="portfolio/physical/crayons/inbox.png" alt="Project Preview Image" class="carousel-trigger-image">
+
+        <!-- FRAME OVERLAY -->
+        <img src="IMG/CarouselFrame2.png" alt="Carousel Frame" class="carousel-frame">
+
       </div>
 
-      <!-- COPY / PASTE THIS BLOCK FOR EACH IMAGE -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb2.png" alt="Gameplay view">
-        </div>
-
-        <div class="project-text">
-          <h2>Design Goals</h2>
-          <p>
-            The goal was to explore x subject and demonstrate my skills.
-          </p>
-        </div>
-      </div>
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
 
     </section>
 
   </div>
 
-  <!-- Carousel modal -->
+  <!-- ===================== -->
+  <!-- CAROUSEL MODAL -->
+  <!-- ===================== -->
+  <!-- Hidden until triggered -->
   <div id="carousel-modal" class="carousel-modal">
+
+    <!-- Close button -->
     <span class="carousel-close">&times;</span>
-    <img class="carousel-image" src="" alt="">
-    <div class="carousel-controls">
-      <button id="prev">‹</button>
-      <button id="next">›</button>
+
+    <div class="carousel-content">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow left">‹</button>
+
+      <!-- Image + caption container -->
+      <div class="carousel-image-wrapper">
+
+        <!-- Active carousel image -->
+        <img class="carousel-image" src="" alt="">
+
+        <!-- Caption for active image -->
+        <p class="carousel-caption"></p>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow right">›</button>
+
     </div>
   </div>
 
+  <!-- ===================== -->
+  <!-- CAROUSEL SCRIPT -->
+  <!-- ===================== -->
   <script src="JS/carousel.js"></script>
+
 </body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
 </html>

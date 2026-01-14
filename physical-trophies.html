@@ -1,79 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PROJ – Holden Denyer</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PAGE TITLE -->
+  <title>Trophies (2025) – Holden Denyer</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="page-project">
   <div class="container">
 
-    <!-- Banner (reuse site banner) -->
+    <!-- ===================== -->
+    <!-- BANNER (Site-wide) -->
+    <!-- ===================== -->
     <header id="banner">
       <div class="banner-wrapper">
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
+
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>Trophies</h1>
+          <p class="project-details">2025 • Stuffed Animals, Wood, 3D Printing</p>
+          <p class="project-subtitle">Mounted animal heads recreated with stuffed animals.</p>
+        </div>
+
       </div>
     </header>
 
-    <!-- Back button -->
-    <nav class="back-nav">
-      <a href="physical.html" class="back-button">← Back to Physical Media Projects</a>
-    </nav>
-
-    <!-- Project title -->
-    <section class="project-header">
-      <h1>PROJECT</h1>
-      <p class="project-subtitle">Info • Details • Ingenuity</p>
+    <!-- ===================== -->
+    <!-- DIRECTORY / NAV BUTTONS -->
+    <!-- ===================== -->
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="physical.html">
+          <img src="IMG/prev_physical.png" alt="TO PHYSICAL MEDIA" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="physical-standard-crayons.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
 
-    <!-- PROJECT CONTENT -->
-    <section class="project-content">
+    <!-- ===================== -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ===================== -->
+    <section class="project-overview">
 
-      <!-- REUSABLE ROW UNIT -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb.png" alt="Maze Blobber screenshot">
-        </div>
+      <h2>Overview</h2>
+      <p>
+        <em>Trophies</em> extends the conceptual framework of Unethically Sourced, shifting 
+        from the bear-skin rug cliché to the equally iconic wall-mounted hunting bust. 
+        Made from the remaining stuffed animal heads used in Unethically Sourced, the series
+         consists of five mounted sculptures—each head corresponding to a section of the original hide.
+      </p>
+      <p>
+        Every “trophy” is affixed to a custom wooden plaque, designed in Adobe Illustrator, 
+        laser-cut from mahogany, and matched to the scale and posture of traditional taxidermy.
+         The heads are hand-sewn into position, and their eyes are replaced with X-shaped buttons—3D
+          modeled in Fusion360 and printed to mimic the role of glass taxidermy eyes. The result is
+           a bizarre inversion of the hunter’s living room trope: familiar forms rendered uncanny 
+           through cartoonish materials.
+      </p>
+      <p>
+        Like its predecessor, <em>Trophies</em> navigates a deliberately uncomfortable space. Although 
+        the subjects were never alive, the violence implied by decapitation and display feels
+         disturbingly real. The work asks why mounting the heads of fictional creatures evokes 
+         disgust, while mounting the heads of real animals has long been normalized as a form of prestige.
+      </p>
 
-        <div class="project-text">
-          <h2>Overview</h2>
-          <p>
-            This project is amazing because x and also because y. 
-          </p>
-        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- CAROUSEL TRIGGER -->
+    <!-- ===================== -->
+    <!-- Single framed image that opens the full carousel -->
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/physical/trophies/whole1.png,
+          portfolio/physical/trophies/whole2.png,
+          portfolio/physical/trophies/pink.png,
+          portfolio/physical/trophies/bear.png,
+          portfolio/physical/trophies/cat.png,
+          portfolio/physical/trophies/cow.png
+        " data-captions="
+          All trophies arranged vertically and in ominous lighting,
+          An alternate view of the trophies,
+          A closer look at a trophy- note the unique wooden plaque and 3d-printed X eye buttons,
+          A closer look at a trophy- note the unique wooden plaque and 3d-printed X eye buttons,
+          A closer look at a trophy- note the unique wooden plaque and 3d-printed X eye buttons,
+          A closer look at a trophy- note the unique wooden plaque and 3d-printed X eye buttons
+        ">
+
+        <!-- FRAME OVERLAY -->
+        <img src="gallery/Trophies_TallFrame.png" alt="Carousel Frame" class="carousel-frame">
+
       </div>
 
-      <!-- COPY / PASTE THIS BLOCK FOR EACH IMAGE -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb2.png" alt="Gameplay view">
-        </div>
-
-        <div class="project-text">
-          <h2>Design Goals</h2>
-          <p>
-            The goal was to explore x subject and demonstrate my skills.
-          </p>
-        </div>
-      </div>
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
 
     </section>
 
   </div>
 
-  <!-- Carousel modal -->
+  <!-- ===================== -->
+  <!-- CAROUSEL MODAL -->
+  <!-- ===================== -->
+  <!-- Hidden until triggered -->
   <div id="carousel-modal" class="carousel-modal">
+
+    <!-- Close button -->
     <span class="carousel-close">&times;</span>
-    <img class="carousel-image" src="" alt="">
-    <div class="carousel-controls">
-      <button id="prev">‹</button>
-      <button id="next">›</button>
+
+    <div class="carousel-content">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow left">‹</button>
+
+      <!-- Image + caption container -->
+      <div class="carousel-image-wrapper">
+
+        <!-- Active carousel image -->
+        <img class="carousel-image" src="" alt="">
+
+        <!-- Caption for active image -->
+        <p class="carousel-caption"></p>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow right">›</button>
+
     </div>
   </div>
 
+  <!-- ===================== -->
+  <!-- CAROUSEL SCRIPT -->
+  <!-- ===================== -->
   <script src="JS/carousel.js"></script>
+
 </body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
 </html>

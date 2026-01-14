@@ -1,79 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PROJ – Holden Denyer</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PAGE TITLE -->
+  <title>Unethically Sourced (2025) – Holden Denyer</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="page-project">
   <div class="container">
 
-    <!-- Banner (reuse site banner) -->
+    <!-- ===================== -->
+    <!-- BANNER (Site-wide) -->
+    <!-- ===================== -->
     <header id="banner">
       <div class="banner-wrapper">
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
+
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>Unethically Sourced</h1>
+          <p class="project-details">2025 • Stuffed Animals, Sewn</p>
+          <p class="project-subtitle">Animal hide recreated with hand-sewn artificial furs.</p>
+        </div>
+
       </div>
     </header>
 
-    <!-- Back button -->
-    <nav class="back-nav">
-      <a href="physical.html" class="back-button">← Back to Physical Media Projects</a>
-    </nav>
-
-    <!-- Project title -->
-    <section class="project-header">
-      <h1>PROJECT</h1>
-      <p class="project-subtitle">Info • Details • Ingenuity</p>
+    <!-- ===================== -->
+    <!-- DIRECTORY / NAV BUTTONS -->
+    <!-- ===================== -->
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="physical.html">
+          <img src="IMG/prev_physical.png" alt="TO PHYSICAL MEDIA" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="physical-trophies.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
 
-    <!-- PROJECT CONTENT -->
-    <section class="project-content">
+    <!-- ===================== -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ===================== -->
+    <section class="project-overview">
 
-      <!-- REUSABLE ROW UNIT -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb.png" alt="Maze Blobber screenshot">
-        </div>
+      <h2>Overview</h2>
+      <p>
+        <em>Unethically Sourced</em> reimagines the classic bear-skin rug through a deliberately 
+        unsettling material choice. Instead of animal hide, the sculpture is constructed from the 
+        fur of numerous stuffed animals, each carefully opened at the seams, emptied of its stuffing,
+         and reorganized into a symmetrical pelt-like shape. At the head, a teddy bear replaces the
+          taxidermied bear, preserving the familiar silhouette while shifting the emotional register.
+      </p>
 
-        <div class="project-text">
-          <h2>Overview</h2>
-          <p>
-            This project is amazing because x and also because y. 
-          </p>
-        </div>
+      <p>
+        The component furs are hand-stitched together, resulting in a Frankenstein-like assemblage 
+        that is simultaneously playful, grotesque, and uncannily tender. The act of deconstructing 
+        beloved childhood objects introduces a moral tension: stuffed animals are things someone made
+        , cherished, and once loved—so why does cutting them apart feel disturbing, while real hides 
+        rarely elicit discomfort?
+      </p>
+
+      <p>
+        Rather than adhering to typical vegan rhetoric, Unethically Sourced critiques the cultural
+         comfort of “ethically sourced” animal products. Even if the animal lived well, it still had
+          to sacrifice for human benefit. The stuffed animal format mirrors this dynamic, provoking 
+          viewers to question why empathy is unevenly distributed between objects, animals, and the 
+          materials they become.
+      </p>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- CAROUSEL TRIGGER -->
+    <!-- ===================== -->
+    <!-- Single framed image that opens the full carousel -->
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/physical/unethically/main.png,
+          portfolio/physical/unethically/over.png,
+          portfolio/physical/unethically/under.png
+        " data-captions="
+          The head remains in-tact and taxidermied like a classic fur rug,
+          The hide consists of many stuffed animal furs that have been adoringly stitched together,
+          A better view of the sewing involved and individual furs used.
+        ">
+
+        <!--
+          TRIGGER IMAGE:
+        -->
+        <img src="portfolio/physical/unethically/main.png" alt="Project Preview Image" class="carousel-trigger-image">
+
+        <!-- FRAME OVERLAY -->
+        <img src="IMG/CarouselFrame2.png" alt="Carousel Frame" class="carousel-frame">
+
       </div>
 
-      <!-- COPY / PASTE THIS BLOCK FOR EACH IMAGE -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb2.png" alt="Gameplay view">
-        </div>
-
-        <div class="project-text">
-          <h2>Design Goals</h2>
-          <p>
-            The goal was to explore x subject and demonstrate my skills.
-          </p>
-        </div>
-      </div>
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
 
     </section>
 
   </div>
 
-  <!-- Carousel modal -->
+  <!-- ===================== -->
+  <!-- CAROUSEL MODAL -->
+  <!-- ===================== -->
+  <!-- Hidden until triggered -->
   <div id="carousel-modal" class="carousel-modal">
+
+    <!-- Close button -->
     <span class="carousel-close">&times;</span>
-    <img class="carousel-image" src="" alt="">
-    <div class="carousel-controls">
-      <button id="prev">‹</button>
-      <button id="next">›</button>
+
+    <div class="carousel-content">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow left">‹</button>
+
+      <!-- Image + caption container -->
+      <div class="carousel-image-wrapper">
+
+        <!-- Active carousel image -->
+        <img class="carousel-image" src="" alt="">
+
+        <!-- Caption for active image -->
+        <p class="carousel-caption"></p>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow right">›</button>
+
     </div>
   </div>
 
+  <!-- ===================== -->
+  <!-- CAROUSEL SCRIPT -->
+  <!-- ===================== -->
   <script src="JS/carousel.js"></script>
+
 </body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
 </html>

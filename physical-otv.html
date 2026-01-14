@@ -1,79 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PROJ – Holden Denyer</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PAGE TITLE -->
+  <title>OTV (2022) – Holden Denyer</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="page-project">
   <div class="container">
 
-    <!-- Banner (reuse site banner) -->
+    <!-- ===================== -->
+    <!-- BANNER (Site-wide) -->
+    <!-- ===================== -->
     <header id="banner">
       <div class="banner-wrapper">
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
+
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>OTV</h1>
+          <p class="project-details">2022 • 3D Printed Parts, Acrylic, Analog Sensors</p>
+          <p class="project-subtitle">An award-nominated OTV project with a unique corkscrew propulsion system.</p>
+        </div>
+
       </div>
     </header>
 
-    <!-- Back button -->
-    <nav class="back-nav">
-      <a href="physical.html" class="back-button">← Back to Physical Media Projects</a>
-    </nav>
-
-    <!-- Project title -->
-    <section class="project-header">
-      <h1>PROJECT</h1>
-      <p class="project-subtitle">Info • Details • Ingenuity</p>
+    <!-- ===================== -->
+    <!-- DIRECTORY / NAV BUTTONS -->
+    <!-- ===================== -->
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="physical.html">
+          <img src="IMG/prev_physical.png" alt="TO PHYSICAL MEDIA" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="physical.html#twod">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
 
-    <!-- PROJECT CONTENT -->
-    <section class="project-content">
+    <!-- ===================== -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ===================== -->
+    <section class="project-overview">
 
-      <!-- REUSABLE ROW UNIT -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb.png" alt="Maze Blobber screenshot">
-        </div>
+      <h2>Overview</h2>
+      <p>
+        I served as CAD Design Lead and Data Analyst on a multidisciplinary engineering team tasked with developing an Over-Terrain Vehicle (OTV). As Design Lead, I produced detailed 3D models and functional prototypes using a blend of CAD software, 3D printing, and hands-on fabrication. My contributions were central to the vehicle’s mechanical design, including the development of a custom corkscrew roller system that required careful consideration of gear ratios, material tolerances, and drivetrain integration. This design element played a key role in our nomination for the Most Innovative Design engineering award.
+      </p>
+      <p>
+        In parallel, I worked as the team’s Data Analyst, collecting and interpreting performance metrics throughout the build and testing phases. I visualized results through graphs, charts, and comparative datasets, enabling the team to evaluate efficiency, iterate effectively, and validate mechanical decisions. Through this dual role, I bridged technical design and empirical assessment, supporting both creative engineering and evidence-driven refinement.
+      </p>
 
-        <div class="project-text">
-          <h2>Overview</h2>
-          <p>
-            This project is amazing because x and also because y. 
-          </p>
-        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- CAROUSEL TRIGGER -->
+    <!-- ===================== -->
+    <!-- Single framed image that opens the full carousel -->
+    <section class="project-carousel-trigger">
+
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/physical/otv/full.png,
+          portfolio/physical/otv/corkscrew.png,
+          portfolio/physical/otv/drawing.png
+        " data-captions="
+          Full constructed OTV-All 3D-printed parts are colored,
+          A closer look at the corkscrew propulsion system,
+          Engineering drawing of the full OTV model. 
+        ">
+
+        <!--
+          TRIGGER IMAGE:
+        -->
+        <img src="portfolio/physical/otv/full.png" alt="Project Preview Image" class="carousel-trigger-image">
+
+        <!-- FRAME OVERLAY -->
+        <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
+
       </div>
 
-      <!-- COPY / PASTE THIS BLOCK FOR EACH IMAGE -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb2.png" alt="Gameplay view">
-        </div>
-
-        <div class="project-text">
-          <h2>Design Goals</h2>
-          <p>
-            The goal was to explore x subject and demonstrate my skills.
-          </p>
-        </div>
-      </div>
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view gallery
+      </p>
 
     </section>
 
   </div>
 
-  <!-- Carousel modal -->
+  <!-- ===================== -->
+  <!-- CAROUSEL MODAL -->
+  <!-- ===================== -->
+  <!-- Hidden until triggered -->
   <div id="carousel-modal" class="carousel-modal">
+
+    <!-- Close button -->
     <span class="carousel-close">&times;</span>
-    <img class="carousel-image" src="" alt="">
-    <div class="carousel-controls">
-      <button id="prev">‹</button>
-      <button id="next">›</button>
+
+    <div class="carousel-content">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow left">‹</button>
+
+      <!-- Image + caption container -->
+      <div class="carousel-image-wrapper">
+
+        <!-- Active carousel image -->
+        <img class="carousel-image" src="" alt="">
+
+        <!-- Caption for active image -->
+        <p class="carousel-caption"></p>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow right">›</button>
+
     </div>
   </div>
 
+  <!-- ===================== -->
+  <!-- CAROUSEL SCRIPT -->
+  <!-- ===================== -->
   <script src="JS/carousel.js"></script>
+
 </body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
 </html>
