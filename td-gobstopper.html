@@ -56,12 +56,9 @@
 
     <section class="nav-row">
       <div class="icon-nav">
-        <a href="https://youtu.be/dlQDUvysP7Y" target="_blank">
+        <a href="https://youtu.be/gLnYZH8fTms" target="_blank">
           <img src="IMG/miniframe_tube.png" title="YouTube Demo" alt="YouTube Demo"
             class="responsive-icon">
-        </a>
-        <a href="https://github.com/hdenyer/ControlDeck">
-          <img src="IMG/miniframe_git.png" title="GitHub Repo" alt="GitHub Repo" class="responsive-icon">
         </a>
         <a href="mailto:holdendenyer@gmail.com?subject=Rewind%20/(2025/)">
           <img src="IMG/miniframe_contact.png" title="Contact Me About This Project" alt="Contact Me" class="responsive-icon">
@@ -78,7 +75,9 @@
       <h2>Overview</h2>
 
       <p>
-        ...
+        <em>Gobstopper</em> is a live camera effect which captures past moments and layers them as
+         vibrant color on high-contrast areas. The resulting effect is an infinite layering of
+          shapes and colors that evolves over time.
       </p>
 
     </section>
@@ -90,23 +89,19 @@
     <section class="project-carousel-trigger">
 
       <div class="carousel-frame-wrapper carousel-trigger" data-images="
-          portfolio/unity/control/ControlDeck1.png,
-          portfolio/unity/control/ControlDeck2.png,
-          portfolio/unity/control/ControlDeck3.png,
-          portfolio/unity/control/ControlDeck4.png,
-          portfolio/unity/control/deck.png,
+            portfolio/td/gobstopper/gob1.png,
+            portfolio/td/gobstopper/gob2.png,
+            portfolio/td/gobstopper/gob3.png
         " data-captions="
-          Submarine Command start screen with a coral reef view,
-          Making a mistake deducts 1 life and displays damaged wires and cracked glass,
-          Making a second mistake queues an alarm and furthers glass cracking,
-          Making a third mistake queues end game and a blown steam valve,
-          Illustrated model of control deck used to provide in-game commands
+            A fresh capture shows little to no layering- just colorful outlines of the camera feed,
+            Movement is captured with a layering of the colorful outline in that moment,
+            The layering of colors becomes more intense as movement ensues.
         ">
 
         <!--
           TRIGGER IMAGE:
         -->
-        <img src="portfolio/unity/control/ControlDeck1.png" alt="Project Preview Image" class="carousel-trigger-image">
+        <img src="portfolio/td/gobstopper/gob3.png" alt="Project Preview Image" class="carousel-trigger-image">
 
         <!-- FRAME OVERLAY -->
         <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
@@ -122,43 +117,34 @@
 
     <section class="project-overview">
 
-      <h2>Introduction</h2>
-      <p>
-        ...
-      </p>
-
-    </section>
-
-    <section class="project-overview">
-
       <h2>Methods</h2>
+
       <p>
-        ...
+        This TouchDesigner project achieves its unique effect by layering many distinct outputs with the Comp TOP.
+        A mix of RGBKey, Edge, Displace, and Ramp TOPs build several unique camera effects, one of which acting
+        as only an outline of the camera image. The other effects are put through a time machine, enabling the layering 
+        effect to occur. The key to the infinite appearance, though, is a final feedback loop which slightly transforms 
+        and decreases the scale with each loop. Combined, we achieve the colorful layering of <em>Gobstopper</em>.
       </p>
+
 
     </section>
 
     <section class="project-carousel-trigger">
 
       <div class="carousel-frame-wrapper carousel-trigger" data-images="
-          portfolio/physical/control/board.png,
-          portfolio/physical/control/sketch.jpg,
-          portfolio/physical/control/cad.png,
-          portfolio/physical/control/wiring.png,
+          portfolio/td/gobstopper/map.png
         " data-captions="
-          The completed prototype unit with over 50 functioning inputs,
-          An initial sketch of the board's layout based on selected input types,
-          CAD drawing of prototype board in Fusion360. Used to scale measurements for laser-cutting,
-          Wiring the inputs to an Arduino Mega controller
+          The complete map of this project displaying the many layers of visual effects utilized
         ">
 
         <!--
           TRIGGER IMAGE:
         -->
-        <img src="portfolio/physical/control/board.png" alt="Project Preview Image" class="carousel-trigger-image">
+        <img src="portfolio/td/gobstopper/map.png" alt="Project Preview Image" class="carousel-trigger-image">
 
         <!-- FRAME OVERLAY -->
-        <img src="IMG/CarouselFrame2.png" alt="Carousel Frame" class="carousel-frame">
+        <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
 
       </div>
 
@@ -167,14 +153,6 @@
         Click image to view gallery
       </p>
 
-    </section>
-
-    <section class="project-overview">
-      <h2>Takeaways</h2>
-
-      <p>
-        ...
-      </p>
     </section>
 
   </div>

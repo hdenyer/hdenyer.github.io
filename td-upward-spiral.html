@@ -75,7 +75,11 @@
       <h2>Overview</h2>
 
       <p>
-        ...
+        <em>Upward Spiral</em> functions as a clock, with each shape correlating to a measure of time. 
+        Seconds, minutes, hours, days and years are all represented by an upward flow of a 
+        circle. In this sense, <em>Upward Spiral</em> is ever-changing and infinitely unique. With 
+        each passing minute and hour, a flux of energy fills the screen - a reminder that as
+         the world continues to change, pulses of light are inevitable.
       </p>
 
     </section>
@@ -87,23 +91,19 @@
     <section class="project-carousel-trigger">
 
       <div class="carousel-frame-wrapper carousel-trigger" data-images="
-          portfolio/unity/control/ControlDeck1.png,
-          portfolio/unity/control/ControlDeck2.png,
-          portfolio/unity/control/ControlDeck3.png,
-          portfolio/unity/control/ControlDeck4.png,
-          portfolio/unity/control/deck.png,
+          portfolio/td/upward/upward1.png,
+          portfolio/td/upward/upward2.png,
+          portfolio/td/upward/upward3.png
         " data-captions="
-          Submarine Command start screen with a coral reef view,
-          Making a mistake deducts 1 life and displays damaged wires and cracked glass,
-          Making a second mistake queues an alarm and furthers glass cracking,
-          Making a third mistake queues end game and a blown steam valve,
-          Illustrated model of control deck used to provide in-game commands
+          The clock's idle appearance,
+          A bright pulse of color and light linger for several seconds after each minute passes,
+          At each hour the colors become the most vibrant and freeze for a moment
         ">
 
         <!--
           TRIGGER IMAGE:
         -->
-        <img src="portfolio/unity/control/ControlDeck1.png" alt="Project Preview Image" class="carousel-trigger-image">
+        <img src="portfolio/td/upward/upward1.png" alt="Project Preview Image" class="carousel-trigger-image">
 
         <!-- FRAME OVERLAY -->
         <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
@@ -119,18 +119,15 @@
 
     <section class="project-overview">
 
-      <h2>Introduction</h2>
-      <p>
-        ...
-      </p>
-
-    </section>
-
-    <section class="project-overview">
-
       <h2>Methods</h2>
       <p>
-        ...
+        A Clock TOP lies at the center of this project, referenced for its live output of each interval of time.
+        A Count TOP then notes of each passing interval, a value then used in a calculation referencing the screen height. This
+        enables a scaled transform in which one pass of the height is equivalent to that unit's length of time. There is a distinct 
+        calculation of this for seconds, minutes, hours, days and months- each applied to an individual circle. Using various Ramp and 
+        Displace TOPs, the image if these circles is altered to create the idle output. A trigger CHOP listens for increase in the minutes 
+        and hours counters, and then queues an effect to mark the change. This effect is achieved by switching between three distinct 
+        video outputs with different effects. Thus, each minute causes a pulse of light and each hour causes a grand wave of glow.
       </p>
 
     </section>
@@ -138,24 +135,18 @@
     <section class="project-carousel-trigger">
 
       <div class="carousel-frame-wrapper carousel-trigger" data-images="
-          portfolio/physical/control/board.png,
-          portfolio/physical/control/sketch.jpg,
-          portfolio/physical/control/cad.png,
-          portfolio/physical/control/wiring.png,
+          portfolio/td/upward/map.png
         " data-captions="
-          The completed prototype unit with over 50 functioning inputs,
-          An initial sketch of the board's layout based on selected input types,
-          CAD drawing of prototype board in Fusion360. Used to scale measurements for laser-cutting,
-          Wiring the inputs to an Arduino Mega controller
+          The complete map of this project- note the 3 distinct time effects linked to a Switch TOP
         ">
 
         <!--
           TRIGGER IMAGE:
         -->
-        <img src="portfolio/physical/control/board.png" alt="Project Preview Image" class="carousel-trigger-image">
+        <img src="portfolio/td/upward/map.png" alt="Project Preview Image" class="carousel-trigger-image">
 
         <!-- FRAME OVERLAY -->
-        <img src="IMG/CarouselFrame2.png" alt="Carousel Frame" class="carousel-frame">
+        <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
 
       </div>
 
@@ -164,14 +155,6 @@
         Click image to view gallery
       </p>
 
-    </section>
-
-    <section class="project-overview">
-      <h2>Takeaways</h2>
-
-      <p>
-        ...
-      </p>
     </section>
 
   </div>
