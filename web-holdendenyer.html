@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- PAGE TITLE -->
-  <!-- Format: Project Name (Year) – Your Name -->
-  <title>holdendenyer.com (2023) – Holden Denyer</title>
+  <title>holdendenyer.com (2022) – Holden Denyer</title>
 
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="page-project">
   <div class="container">
 
     <!-- ===================== -->
@@ -21,15 +26,13 @@
     <header id="banner">
       <div class="banner-wrapper">
 
-        <!-- Animated or static banner image -->
-        <img src="IMG/BannerTemp.png"
-             alt="Animated Banner"
-             class="banner-gif">
+        <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
 
-        <!-- Decorative frame that scales with banner -->
-        <img src="IMG/BannerFrame.png"
-             alt="Banner Frame"
-             class="banner-frame">
+        <div class="banner-text">
+          <h1>holdendenyer.com</h1>
+          <p class="project-details">2023 • HTML, CSS, JavaScript</p>
+          <p class="project-subtitle">An early take on my personal portfolio site.</p>
+        </div>
 
       </div>
     </header>
@@ -37,31 +40,18 @@
     <!-- ===================== -->
     <!-- DIRECTORY / NAV BUTTONS -->
     <!-- ===================== -->
-    <nav class="project-nav">
-
-      <!-- Link back to parent skill page -->
-      <!-- Example: unity.html, web.html, adobe.html -->
-      <a href="web.html" class="back-button">← Web Design</a>
-
-      <!-- Link back to main gallery / home -->
-      <a href="index.html" class="back-button">Gallery</a>
-
-    </nav>
-
-    <!-- ===================== -->
-    <!-- PROJECT HEADER -->
-    <!-- ===================== -->
-    <section class="project-header">
-
-      <!-- PROJECT TITLE -->
-      <h1>holdendenyer.com (2023)</h1>
-
-      <!-- SHORT DESCRIPTOR -->
-      <!-- Example: Unity • Arduino • Installation -->
-      <p class="project-subtitle">
-        PRIMARY TOOL • SECONDARY TOOL • CONTEXT / THEME
-      </p>
-
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="web.html">
+          <img src="IMG/prev_web.png" alt="TO WEB DESIGN" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="web-chimp-champ-chomp.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
 
     <!-- ===================== -->
@@ -72,9 +62,13 @@
       <h2>Overview</h2>
 
       <p>
-        This project explores [CORE IDEA OR QUESTION].
-        It was created using [TOOLS / SOFTWARE / MEDIA]
-        and focuses on [INTERACTION, DESIGN GOAL, OR CONCEPT].
+        <em>holdendenyer.com</em> represents an early version of this website, originally built in 2022.
+         It was one of my first personal HTML projects and served as the starting point for the 
+         gallery style that still defines my portfolio today. While far from perfect — its responsiveness 
+         was limited and its content minimal — it featured a simple JavaScript menu and showcased 15 works. 
+         Looking back, this project highlights both the clarity of direction I had early on and the web 
+         design experience I had yet to gain. It stands as an important milestone that makes the current 
+         site’s sophistication feel all the more meaningful.
       </p>
 
     </section>
@@ -85,37 +79,26 @@
     <!-- Single framed image that opens the full carousel -->
     <section class="project-carousel-trigger">
 
-      <div class="carousel-frame-wrapper carousel-trigger"
-
-        data-images=""
-        data-captions=""
-      >
-        <img
-          src="portfolio/web/holden/home.jpg"
-          alt="Project Preview Image"
-          class="carousel-trigger-image"
-        >
-
-        <!-- FRAME OVERLAY -->
-        <a href="portfolio/web/holden/index.html">
-        <img
-          src="IMG/CarouselFrame.png"
-          alt="Carousel Frame"
-          class="carousel-frame"
-        >
+      <div class="carousel-frame-wrapper carousel-trigger">
+        <a href="portfolio/web/holden/index.html" target="_blank">
+          <img src="portfolio/web/holden/home.jpg" alt="Project Preview Image" class="carousel-trigger-image">
         </a>
 
+        <!-- FRAME OVERLAY -->
+         <a href="portfolio/web/holden/index.html" target="_blank">
+          <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
+         </a>
       </div>
 
       <!-- Optional helper text -->
       <p class="carousel-hint">
-        Click image to view gallery
+        Click image to open site in new tab
       </p>
 
     </section>
 
-  </div>
-
+    </div>
+    
   <!-- ===================== -->
   <!-- CAROUSEL MODAL -->
   <!-- ===================== -->
@@ -153,4 +136,9 @@
   <script src="JS/carousel.js"></script>
 
 </body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
 </html>

@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- PAGE TITLE -->
-  <!-- Format: Project Name (Year) – Your Name -->
-  <title>monkeygallery.net (2022) – Holden Denyer</title>
+  <title>monkeygallery.net (2023) – Holden Denyer</title>
 
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="page-project">
   <div class="container">
 
     <!-- ===================== -->
@@ -21,15 +26,13 @@
     <header id="banner">
       <div class="banner-wrapper">
 
-        <!-- Animated or static banner image -->
-        <img src="IMG/BannerTemp.png"
-             alt="Animated Banner"
-             class="banner-gif">
+        <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
 
-        <!-- Decorative frame that scales with banner -->
-        <img src="IMG/BannerFrame.png"
-             alt="Banner Frame"
-             class="banner-frame">
+        <div class="banner-text">
+          <h1>monkeygallery.net</h1>
+          <p class="project-details">2023 • HTML, CSS</p>
+          <p class="project-subtitle">Challenged to create the ugliest, most dysfunctional site. This was the result!</p>
+        </div>
 
       </div>
     </header>
@@ -37,31 +40,18 @@
     <!-- ===================== -->
     <!-- DIRECTORY / NAV BUTTONS -->
     <!-- ===================== -->
-    <nav class="project-nav">
-
-      <!-- Link back to parent skill page -->
-      <!-- Example: unity.html, web.html, adobe.html -->
-      <a href="web.html" class="back-button">← Web Design</a>
-
-      <!-- Link back to main gallery / home -->
-      <a href="index.html" class="back-button">Gallery</a>
-
-    </nav>
-
-    <!-- ===================== -->
-    <!-- PROJECT HEADER -->
-    <!-- ===================== -->
-    <section class="project-header">
-
-      <!-- PROJECT TITLE -->
-      <h1>monkeygallery.net</h1>
-
-      <!-- SHORT DESCRIPTOR -->
-      <!-- Example: Unity • Arduino • Installation -->
-      <p class="project-subtitle">
-        PRIMARY TOOL • SECONDARY TOOL • CONTEXT / THEME
-      </p>
-
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="web.html">
+          <img src="IMG/prev_web.png" alt="TO WEB DESIGN" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="web-holdendenyer.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
 
     <!-- ===================== -->
@@ -72,9 +62,15 @@
       <h2>Overview</h2>
 
       <p>
-        This project explores [CORE IDEA OR QUESTION].
-        It was created using [TOOLS / SOFTWARE / MEDIA]
-        and focuses on [INTERACTION, DESIGN GOAL, OR CONCEPT].
+        <em>monkeygallery.net</em> was born from a challenge to create the ugliest,
+         most dysfunctional HTML/CSS website possible. Its chaotic visuals, clashing elements
+         , and deliberately confusing interface set the tone immediately. The site includes a 
+         fake directory, numerous dead-end pages, and an intentionally frustrating navigation flow—all 
+         designed to delay the user from reaching the actual “monkey gallery.” Once they 
+         finally discover it, the images behave counterintuitively, shrinking on hover instead 
+         of enlarging. The result is something truly… unique—and nearly unusable. Ironically, 
+         crafting a site this bad requires a deep understanding of how to make a good one; 
+         producing something wholly dysfunctional takes a surprising amount of functional design and programming awareness.
       </p>
 
     </section>
@@ -85,37 +81,26 @@
     <!-- Single framed image that opens the full carousel -->
     <section class="project-carousel-trigger">
 
-      <div class="carousel-frame-wrapper carousel-trigger"
-
-        data-images=""
-        data-captions=""
-      >
-        <img
-          src="portfolio/web/monkey/home.png"
-          alt="Project Preview Image"
-          class="carousel-trigger-image"
-        >
-
-        <!-- FRAME OVERLAY -->
-        <a href="portfolio/web/monkey/index.html">
-        <img
-          src="IMG/CarouselFrame.png"
-          alt="Carousel Frame"
-          class="carousel-frame"
-        >
+      <div class="carousel-frame-wrapper carousel-trigger">
+        <a href="portfolio/web/monkey/index.html" target="_blank">
+          <img src="portfolio/web/monkey/home.png" alt="Project Preview Image" class="carousel-trigger-image">
         </a>
 
+        <!-- FRAME OVERLAY -->
+         <a href="portfolio/web/monkey/index.html" target="_blank">
+          <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
+         </a>
       </div>
 
       <!-- Optional helper text -->
       <p class="carousel-hint">
-        Click image to view gallery
+        Click image to open site in new tab
       </p>
 
     </section>
 
-  </div>
-
+    </div>
+    
   <!-- ===================== -->
   <!-- CAROUSEL MODAL -->
   <!-- ===================== -->
@@ -153,4 +138,9 @@
   <script src="JS/carousel.js"></script>
 
 </body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
 </html>
