@@ -103,19 +103,21 @@ body.page-project {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%; /* prevents touching borders */
+  width: 90%;
+  /* prevents touching borders */
   height: auto;
   max-height: 200px;
   text-align: center;
   padding: 0 2%;
-  pointer-events: none; /* optional: prevents clicks blocking frame */
+  pointer-events: none;
+  /* optional: prevents clicks blocking frame */
 }
 
 .banner-text h1 {
   margin: 0 0 5px;
   color: #f5e9d6;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1;
   font-size: clamp(1.4rem, 4vw, 2.5rem);
 }
@@ -134,8 +136,9 @@ body.page-project {
   color: #f5e9d6;
   opacity: 0.65;
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: clamp(0.2rem, 1.75vw, 1rem);
+  font-style: italic;
 }
 
 
@@ -190,6 +193,8 @@ body.page-project {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Every image scales with the window */
@@ -207,6 +212,12 @@ body.page-project {
   justify-content: space-around;
 }
 
+.gallery-wall,
+.welcome-section,
+#banner {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* Banner centered and allowed to grow larger */
@@ -288,7 +299,7 @@ body.page-project {
   /* half the height of .large */
 }
 
-/* Optional variants for wider compositions */
+/* variants for wider compositions */
 .gallery-item.wide-3 {
   grid-column: span 3;
   grid-row: span 1;
@@ -312,7 +323,7 @@ body.page-project {
   }
 }
 
-/* Responsive fallback for narrow screens */
+/* Fallback for narrow screens */
 @media (max-width: 700px) {
   .gallery-wall {
     grid-template-columns: repeat(2, 1fr);
@@ -346,13 +357,13 @@ body.page-project {
 .project-header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-    color: #f5e9d6;
+  color: #f5e9d6;
   font-family: 'Montserrat', sans-serif;
 }
 
 .project-subtitle {
   opacity: 0.85;
-    color: #f5e9d6;
+  color: #f5e9d6;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -375,7 +386,8 @@ body.page-project {
 
   background: rgba(0, 0, 0, 0.35);
   padding: 10px;
-  border-radius: 6px; /* optional nice visual */
+  border-radius: 6px;
+  /* optional nice visual */
 }
 
 .project-overview a {
@@ -388,8 +400,9 @@ body.page-project {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
+
 .project-overview .link:hover {
-  color:#6C0F0F;
+  color: #6C0F0F;
 }
 
 
@@ -402,6 +415,7 @@ body.page-project {
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  font-weight: 600;
 }
 
 .project-overview p {
@@ -410,7 +424,7 @@ body.page-project {
   color: #f5e9d6;
   font-size: clamp(0.9rem, 2vw, 1.25rem);
   line-height: 1.5;
-  opacity: 0.85;
+  opacity: 0.8;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -421,8 +435,9 @@ body.page-project {
   color: #f5e9d6;
   font-size: clamp(0.9rem, 2vw, 1.25rem);
   line-height: 1.5;
-  opacity: 0.85;
+  opacity: 0.8;
   font-family: 'Montserrat', sans-serif;
+  text-align: left;
 }
 
 
@@ -606,7 +621,7 @@ body.page-project {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
 }
 
 .skills-nav a {
@@ -623,7 +638,7 @@ body.page-project {
 
 @media (max-width: 800px) {
   .skills-nav a {
-  max-width: 25vw;
+    max-width: 25vw;
   }
 }
 
@@ -636,8 +651,9 @@ body.page-project {
 }
 
 .icon-nav a {
-  margin: 0 10px; /* side margin */
-  display: inline-block; /* keeps layout tight */
+  margin: 0 10px;
+  /* sides margin */
+  display: inline-block;
 }
 
 @media (max-width: 800px) {
@@ -646,12 +662,24 @@ body.page-project {
   }
 }
 
-.icon-nav {
+.icon-nav-center {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1250px;
   height: auto;
   flex-wrap: nowrap;
+}
+
+.icon-nav-center a {
+  margin: 0 20px;
+  /* sides margin */
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .icon-nav-center {
+    margin: 0 2px;
+  }
 }
 
 .responsive-icon:hover {
@@ -773,12 +801,27 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5vw; 
+  gap: 2.5vw;
   margin: 30px 0 30px;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
 }
 
 .main-menu a {
+  display: block;
+  flex: 1 1 0;
+  max-width: 275px;
+}
+
+.main-menu-bottom {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  margin: 30px 0 30px;
+  flex-wrap: nowrap;
+}
+
+.main-menu-bottom a {
   display: block;
   flex: 1 1 0;
   max-width: 275px;
@@ -812,7 +855,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5vw; 
+  gap: 2.5vw;
   margin: 30px 0 30px;
 }
 
@@ -837,6 +880,8 @@ html {
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  align-self: flex-end;
 }
 
 .site-footer {
@@ -848,6 +893,8 @@ html {
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  align-self: flex-end;
 }
 
 html,
@@ -946,19 +993,17 @@ body {
   margin-bottom: 12px;
   letter-spacing: 0.05em;
   color: #f5e9d6;
-  font-size: clamp(1.8rem, 5vw, 2.5rem);
-  line-height: 1.5;
-
+  font-size: clamp(1.5rem, 5vw, 3.65rem);
+  line-height: 1.15;
   font-family: 'Montserrat', sans-serif;
 }
 
 .about-text p {
   margin-bottom: 16px;
-  line-height: 1.6;
+  margin-top: 5px;
   color: #f5e9d6;
-  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  font-size: clamp(0.35rem, 2vw, 1.5rem);
   line-height: 1.5;
-
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -999,7 +1044,7 @@ body {
 }
 
 .skills-text p {
-  color:#f5e9d6;
+  color: #f5e9d6;
   font-size: 18px;
 }
 
@@ -1115,6 +1160,7 @@ body {
 .materials {
   font-size: clamp(0.35rem, calc(var(--label-scale) * 1.35), 1.05rem);
   font-style: italic;
+  font-weight: 200;
   margin-bottom: 8px;
 }
 
@@ -1155,7 +1201,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%;            /* 1000px relative to frame */
+  width: 80%;
+  /* 1000px relative to frame */
   max-width: 1000px;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -1182,21 +1229,25 @@ body {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 1000;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* ensures some spacing on mobile */
-  overflow: auto; /* prevent clipping */
+  padding: 20px;
+  /* ensures some spacing on mobile */
+  overflow: auto;
+  /* prevent clipping */
 }
 
 .carousel-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; /* stack image + caption on small widths */
+  flex-direction: column;
+  /* stack image + caption on small widths */
   width: 100%;
-  max-width: 100%; /* full width responsive */
+  max-width: 100%;
+  /* full width responsive */
 }
 
 .carousel-image-wrapper {
@@ -1207,10 +1258,13 @@ body {
 }
 
 .carousel-image {
-  width: 100%;   /* responsive width */
-  height: auto;  /* maintain aspect ratio */
+  width: 100%;
+  /* responsive width */
+  height: auto;
+  /* maintain aspect ratio */
   max-height: 80vh;
-  object-fit: contain; /* ensure image fits within viewport */
+  object-fit: contain;
+  /* ensure image fits within viewport */
 }
 
 .carousel-arrow {
@@ -1224,12 +1278,12 @@ body {
 
 .carousel-arrow.left {
   left: 10px;
-  color:#fff;
+  color: #fff;
 }
 
 .carousel-arrow.right {
   right: 10px;
-  color:#fff;
+  color: #fff;
 }
 
 .carousel-close {
