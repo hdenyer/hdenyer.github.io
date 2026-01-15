@@ -1,79 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PROJ – Holden Denyer</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PAGE TITLE -->
+  <title>art for your bathroom (2023) – Holden Denyer</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="IMG/sigbold.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="page-project">
   <div class="container">
 
-    <!-- Banner (reuse site banner) -->
+    <!-- ===================== -->
+    <!-- BANNER (Site-wide) -->
+    <!-- ===================== -->
     <header id="banner">
       <div class="banner-wrapper">
-        <img src="IMG/BannerTemp.png" alt="Animated Banner" class="banner-gif">
+
         <img src="IMG/BannerFrame.png" alt="Banner Frame" class="banner-frame">
+
+        <div class="banner-text">
+          <h1>art for your bathroom</h1>
+          <p class="project-details">2023 • InDesign</p>
+          <p class="project-subtitle">My 2023 portfolio catalog.</p>
+        </div>
+
       </div>
     </header>
 
-    <!-- Back button -->
-    <nav class="back-nav">
-      <a href="adobe.html" class="back-button">← Back to Adobe Projects</a>
-    </nav>
-
-    <!-- Project title -->
-    <section class="project-header">
-      <h1>PROJECT</h1>
-      <p class="project-subtitle">Info • Details • Ingenuity</p>
+    <!-- ===================== -->
+    <!-- DIRECTORY / NAV BUTTONS -->
+    <!-- ===================== -->
+    <section class="nav-row">
+      <div class="skills-nav">
+        <a href="adobe.html">
+          <img src="IMG/prev_adobe.png" alt="TO ADOBE SOFTWARE" class="menu-frame">
+        </a>
+        <a href="index.html">
+          <img src="IMG/menuframe_gallery.png" alt="TO GALLERY" class="menu-frame">
+        </a>
+        <a href="adobe-gerds-vr.html">
+          <img src="IMG/menuframe_nextproj.png" alt="NEXT PROJ" class="menu-frame">
+        </a>
+      </div>
     </section>
 
-    <!-- PROJECT CONTENT -->
-    <section class="project-content">
+    <!-- ===================== -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ===================== -->
+    <section class="project-overview">
 
-      <!-- REUSABLE ROW UNIT -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb.png" alt="Maze Blobber screenshot">
-        </div>
+      <h2>Overview</h2>
 
-        <div class="project-text">
-          <h2>Overview</h2>
-          <p>
-            This project is amazing because x and also because y. 
-          </p>
-        </div>
-      </div>
-
-      <!-- COPY / PASTE THIS BLOCK FOR EACH IMAGE -->
-      <div class="project-row">
-        <div class="project-image">
-          <img src="IMG/maze-blobber-thumb2.png" alt="Gameplay view">
-        </div>
-
-        <div class="project-text">
-          <h2>Design Goals</h2>
-          <p>
-            The goal was to explore x subject and demonstrate my skills.
-          </p>
-        </div>
-      </div>
+      <p>
+        <em>art for your bathroom</em> is a comprehensive catalog of my creative work as of 2023.
+         Designed in Adobe InDesign, it showcases a wide range of mediums and projects with
+          clean layouts and contextual notes. Some pieces featured in this catalog are not 
+          currently displayed elsewhere on my portfolio, making it a fuller snapshot of my 
+          artistic output.
+      </p>
 
     </section>
 
-  </div>
+    <!-- ===================== -->
+    <!-- CAROUSEL TRIGGER -->
+    <!-- ===================== -->
+    <!-- Single framed image that opens the full carousel -->
+    <section class="project-carousel-trigger">
 
-  <!-- Carousel modal -->
+      <div class="carousel-frame-wrapper carousel-trigger" data-images="
+          portfolio/adobe/indesign/portfolio_cover.png,
+          portfolio/adobe/indesign/portfolio1.png,
+          portfolio/adobe/indesign/portfolio2.png,
+          portfolio/adobe/indesign/portfolio3.png,
+          portfolio/adobe/indesign/portfolio4.png,
+          portfolio/adobe/indesign/portfolio5.png,
+          portfolio/adobe/indesign/portfolio6.png,
+          portfolio/adobe/indesign/portfolio7.png,
+          portfolio/adobe/indesign/portfolio8.png,
+          portfolio/adobe/indesign/portfolio9.png,
+          portfolio/adobe/indesign/portfolio10.png,
+          portfolio/adobe/indesign/portfolio11.png,
+          portfolio/adobe/indesign/portfolio12.png,
+          portfolio/adobe/indesign/portfolio13.png,
+          portfolio/adobe/indesign/portfolio14.png,
+          portfolio/adobe/indesign/portfolio15.png,
+          portfolio/adobe/indesign/portfolio16.png,
+          portfolio/adobe/indesign/portfolio17.png,
+          portfolio/adobe/indesign/portfolio18.png,
+          portfolio/adobe/indesign/portfolio19.png,
+          portfolio/adobe/indesign/portfolio20.png,
+          portfolio/adobe/indesign/portfolio21.png,
+          portfolio/adobe/indesign/portfolio22.png
+        " data-captions="
+        ">
+
+        <img src="portfolio/adobe/indesign/portfolio_fullcover.png" alt="Project Preview Image" class="carousel-trigger-image">
+
+        <!-- FRAME OVERLAY -->
+        <img src="IMG/CarouselFrame.png" alt="Carousel Frame" class="carousel-frame">
+
+      </div>
+
+      <!-- Optional helper text -->
+      <p class="carousel-hint">
+        Click image to view catalog
+      </p>
+
+    </section>
+
+    </div>
+    
+  <!-- ===================== -->
+  <!-- CAROUSEL MODAL -->
+  <!-- ===================== -->
+  <!-- Hidden until triggered -->
   <div id="carousel-modal" class="carousel-modal">
+
+    <!-- Close button -->
     <span class="carousel-close">&times;</span>
-    <img class="carousel-image" src="" alt="">
-    <div class="carousel-controls">
-      <button id="prev">‹</button>
-      <button id="next">›</button>
+
+    <div class="carousel-content">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow left">‹</button>
+
+      <!-- Image + caption container -->
+      <div class="carousel-image-wrapper">
+
+        <!-- Active carousel image -->
+        <img class="carousel-image" src="" alt="">
+
+        <!-- Caption for active image -->
+        <p class="carousel-caption"></p>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow right">›</button>
+
     </div>
   </div>
 
+  <!-- ===================== -->
+  <!-- CAROUSEL SCRIPT -->
+  <!-- ===================== -->
   <script src="JS/carousel.js"></script>
+
 </body>
+
+<footer class="site-footer">
+    <p>© 2026 Holden Denyer. All rights reserved.</p>
+</footer>
+
 </html>

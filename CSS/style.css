@@ -378,6 +378,20 @@ body.page-project {
   border-radius: 6px; /* optional nice visual */
 }
 
+.project-overview a {
+  margin-top: 0;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  color: #f5e9d6;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+.project-overview .link:hover {
+  color:#6C0F0F;
+}
+
 
 .project-overview h2 {
   margin-top: 0;
