@@ -176,6 +176,11 @@ body.page-project {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  transition: transform 0.2s ease;
+}
+
+.about-preview:hover {
+  transform: scale(1.01);
 }
 
 .container {
@@ -251,30 +256,35 @@ body.page-project {
   height: auto;
   display: block;
   object-fit: cover;
+  transition: transform 0.2s ease;
 }
 
 /* Large frames span 2x2 slots */
 .gallery-item.large {
   grid-column: span 2;
   grid-row: span 2;
+  transition: transform 0.2s ease;
 }
 
 /* Small frames take 1x1 slot by default */
 .gallery-item.small {
   grid-column: span 1;
   grid-row: span 1;
+  transition: transform 0.2s ease;
 }
 
 /* This forces one small frame to stack directly above the other */
 .gallery-item.small.tall {
   grid-row: span 2;
   /* takes up same vertical height as large frame */
+  transition: transform 0.2s ease;
 }
 
 /* "Wide" frames are short and stretch horizontally */
 .gallery-item.wide {
   grid-column: span 2;
   grid-row: span 1;
+  transition: transform 0.2s ease;
   /* half the height of .large */
 }
 
@@ -282,11 +292,13 @@ body.page-project {
 .gallery-item.wide-3 {
   grid-column: span 3;
   grid-row: span 1;
+  transition: transform 0.2s ease;
 }
 
 .gallery-item.wide-4 {
   grid-column: span 4;
   grid-row: span 1;
+  transition: transform 0.2s ease;
 }
 
 /* Mobile adjustment: full-width and shorter */
@@ -316,6 +328,10 @@ body.page-project {
     grid-column: span 1;
     grid-row: span 1;
   }
+}
+
+.gallery-item:hover {
+  transform: scale(1.01);
 }
 
 /* PROJECT PAGE */

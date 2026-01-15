@@ -101,9 +101,9 @@
       </div>
 
       <!-- Row 2 -->
-      <div class="skills-row row-right">
+      <div id="next" class="skills-row row-right single-image-trigger" data-image="portfolio/adobe/photoshop/invite.png"
+        data-caption="Terror at the Tower (2024)">
         <div class="project-label">
-          <a href="adobe-terror-at-the-tower.html">
             <div class="label-header">
               <span class="title">Terror at the Tower,</span>
               <span class="date">2024</span>
@@ -116,24 +116,19 @@
             <p class="details">
               A mass-distributed horror-themed event invitation.
             </p>
-          </a>
         </div>
         <div class="project-image">
-          <a href="adobe-terror-at-the-tower.html">
             <img src="gallery/Terror_Frame2.png" alt="Terror at the Tower">
-          </a>
         </div>
       </div>
 
       <!-- Row 3 -->
-      <div class="skills-row row-left">
+      <div class="skills-row row-left single-image-trigger" data-image="portfolio/adobe/photoshop/bombardier.jpg"
+        data-caption="The WEIRD: Bombardier Beetles (2024)">
         <div class="project-image">
-          <a href="adobe-bombardier-beetle.html">
             <img src="gallery/Bombardier_Frame1.png" alt="Bombardier Beetle Infographic">
-          </a>
         </div>
         <div class="project-label">
-          <a href="adobe-bombardier-beetle.html">
             <div class="label-header">
               <span class="title">The WEIRD: Bombardier Beetles,</span>
               <span class="date">2024</span>
@@ -146,14 +141,13 @@
             <p class="details">
               A visually cohesive infographic about Bombardier Beetles.
             </p>
-          </a>
         </div>
       </div>
 
       <!-- Row 4 -->
-      <div class="skills-row row-right">
+      <div class="skills-row row-right single-image-trigger" data-image="portfolio/adobe/photoshop/welp.png"
+        data-caption="Welp (2023)">
         <div class="project-label">
-          <a href="adobe-welp.html">
             <div class="label-header">
               <span class="title">Welp,</span>
               <span class="date">2023</span>
@@ -166,24 +160,19 @@
             <p class="details">
               A visual collage made up of elements found on UMD campus.
             </p>
-          </a>
         </div>
         <div class="project-image">
-          <a href="adobe-welp.html">
             <img src="gallery/Welp_Frame3.png" alt="Welp">
-          </a>
         </div>
       </div>
 
       <!-- Row 5 -->
-      <div class="skills-row row-left">
+      <div class="skills-row row-left single-image-trigger" data-image="portfolio/adobe/photoshop/untitled.png"
+        data-caption="Untitled (2023)">
         <div class="project-image">
-          <a href="adobe-untitled.html">
             <img src="gallery/Untitled_Frame1.png" alt="Untitled">
-          </a>
         </div>
         <div class="project-label">
-          <a href="adobe-untitled.html">
             <div class="label-header">
               <span class="title">Untitled,</span>
               <span class="date">2023</span>
@@ -196,7 +185,6 @@
             <p class="details">
               A visual collage made up of elements found on UMD campus.
             </p>
-          </a>
         </div>
       </div>
 
@@ -213,9 +201,11 @@
         for fabrication workflows, including laser-cutting paths and design elements
         for 3D-printed components.</p>
       <!-- Row 1 -->
-      <div class="skills-row row-right">
+
+      <section class="project-carousel-trigger">
+      <div class="skills-row row-right carousel-trigger" data-images="portfolio/adobe/illustrator/jazz1.png, portfolio/adobe/illustrator/jazz2.png"
+        data-captions="Jazz [Light] (2023), Jazz [Dark] (2023)">
         <div class="project-label">
-          <a href="adobe-jazz-touch-of-class.html">
             <div class="label-header">
               <span class="title">Jazz,</span>
               <span class="date">2023</span>
@@ -228,24 +218,20 @@
             <p class="details">
               A jazzy vector-based poster for a local music event.
             </p>
-          </a>
         </div>
         <div class="project-image">
-          <a href="adobe-jazz-touch-of-class.html">
             <img src="gallery/Jazz_Frame2.png" alt="Jazz: With a Touch of Class">
-          </a>
         </div>
       </div>
+      </section>
 
       <!-- Row 2 -->
-      <div class="skills-row row-left">
+      <div class="skills-row row-left single-image-trigger" data-image="portfolio/adobe/illustrator/banana.jpeg"
+        data-caption="banananananana (2023)">
         <div class="project-image">
-          <a href="adobe-bananananana.html">
             <img src="gallery/Banana_Frame3.png" alt="bananananana">
-          </a>
         </div>
         <div class="project-label">
-          <a href="adobe-bananananana.html">
             <div class="label-header">
               <span class="title">banananananana,</span>
               <span class="date">2023</span>
@@ -258,7 +244,6 @@
             <p class="details">
               A minimalist vector depiction of a banana-centered photograph.
             </p>
-          </a>
         </div>
       </div>
     </section>
@@ -287,7 +272,7 @@
             </div>
 
             <p class="details">
-              A hand-drawn short film about a desparate village and a strange fish.
+              A hand-drawn short film about a desperate village and a strange fish.
             </p>
           </a>
         </div>
@@ -440,6 +425,24 @@
     </section>
 
   </div>
+
+    <!-- Carousel Modal -->
+  <div id="carousel-modal" class="carousel-modal">
+    <span class="carousel-close">&times;</span>
+
+    <div class="carousel-content">
+      <button class="carousel-arrow left">&#10094;</button>
+
+      <div class="carousel-image-wrapper">
+        <img class="carousel-image" src="" alt="">
+        <div class="carousel-caption"></div>
+      </div>
+
+      <button class="carousel-arrow right">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="JS/carousel.js"></script>
 
   <footer class="site-footer">
     <p>© 2026 Holden Denyer. All rights reserved.</p>
