@@ -969,6 +969,7 @@ body {
 
 .about-image {
   flex: 0 0 40%;
+  max-width: 350px;
   display: flex;
 }
 
@@ -1324,4 +1325,64 @@ body {
 
 .gap {
   margin: 50px 50px;
+}
+
+
+.socials-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  margin: 30px 0 30px;
+  flex-wrap: nowrap;
+}
+
+.socials-menu a {
+  display: block;
+  flex: 1 1 0;
+  max-width: 275px;
+}
+
+
+.resume-image {
+  flex: 0 0 60%;
+  display: flex;
+}
+
+.resume-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.resume-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 350px;
+  text-align: right;
+  vertical-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.resume-text h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  color: #f5e9d6;
+  font-size: clamp(1.5rem, 5vw, 3.65rem);
+  line-height: 1.15;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resume-text p {
+  margin-bottom: 16px;
+  margin-top: 5px;
+  color: #f5e9d6;
+  font-size: clamp(0.35rem, 2vw, 1.5rem);
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
 }
