@@ -1,0 +1,124 @@
+PRESSURIZED README
+
+Project Title PRESSURIZED
+Creator Holden Denyer Immersive Media Design B.S., University of Maryland Senior Capstone Project. Capstone I & II, Academic Year 2025–2026
+Short Description PRESSURIZED is a tactile arcade experience in which a player pilots a
+submarine
+
+through
+
+a
+
+chaotic
+
+underwater
+
+world
+
+by
+
+operating
+
+a
+
+massive
+
+hand-built
+
+panel
+
+of
+
+real
+
+switches,
+
+dials,
+
+levers,
+
+and
+
+buttons.
+
+The
+
+game
+
+is
+
+built
+
+in
+
+Unity
+
+and
+
+communicates
+
+in
+
+real
+
+time
+
+with
+
+a
+
+custom
+
+Arduino-based
+
+physical
+
+controller
+
+mounted
+
+in
+
+a
+
+hand-fabricated
+
+arcade
+
+cabinet.
+
+How to Run See Setup Instructions document for full step-by-step launch procedure. In
+brief:
+1. Connect all three daisy-chained Arduino via single USB cable to the
+laptop.
+2. Power on the Bluetooth speaker and pair to the laptop. 3. Power on the monitor and LED power supply via the power strip. 4. Launch the PRESSURIZED Unity build executable. 5. Verify serial connections and LED response. The game is ready.
+Required Software - Unity (standalone build. No Unity Editor required for play) - Arduino IDE (for debugging only)
+
+Required Hardware - PRESSURIZED arcade cabinet - PRESSURIZED control deck with 2x Arduino Mega + 1x Arduino Uno - Laptop (MacBook or equivalent, build is for MacOS) - Monitor (installed in cabinet) - Bluetooth speaker - Power strip
+Folder Structure 01_ProjectBuild: Unity standalone build executable and required data folders 02_SourceFiles: Unity project source ﬁles, Arduino scripts 03_FinalDocumentation: Final Documentation, Artist Statement 04_ProcessDocumentation: Process Documentation 05_ProcessDocumentation_IMAGES: Development Timeline with photos 06_PresentationMaterials: Showcase poster, presentation description 07_SetupInstructions: Full installation and setup instructions 08_ReadMe: This document
+Known Issues - Arduino RAM at capacity on all three boards. New processing logic
+should
+
+not
+
+be
+
+added
+
+to
+
+microcontrollers.
+- Input state inversions may occur on cold boot; restart the Unity build to
+resolve.
+- LED system requires Unity to be running to receive animation data;
+standalone
+
+LED
+
+behavior
+
+is
+
+not
+
+implemented.
